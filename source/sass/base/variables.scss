@@ -1,7 +1,6 @@
 // fonts
 
-$font-base: "Lato", "PT Sans", sans-serif;
-$font-secondary: "Oswald", "PT Sans", sans-serif;
+$font-base: "Open Sans", "Arial", sans-serif;
 
 
 // colors
@@ -40,3 +39,9 @@ $color-icon-second: #149080;
 $color-form-dop: #62d1ba;
 $color-plaseholder: rgba(0, 0, 0, .3);
 
+
+// WIDTH
+
+$desktop-width: 1150px;
+$tablet-width: 768px;
+$mobile-width: 320px;

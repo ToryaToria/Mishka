@@ -1,7 +1,16 @@
-.html__body {
-  // background-color: $color-white;
-  // min-width: 320px;
-  margin: 0;
+.html {
+  height: 100%;
+}
 
-  background-color: #00ff00;
+.html__body {
+  margin: 0 auto;
+  background-color: $color-white;
+
+  min-width: $mobile-width;
+
+  outline: 1px solid #ff0000;
+
+  @include media-desktop {
+    max-width: $desktop-width;
+  }
 }

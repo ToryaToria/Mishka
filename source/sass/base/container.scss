@@ -1,10 +1,14 @@
 .container {
   box-sizing: border-box;
+  border: 1px solid #00ff00;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 
-  width: 320px;
-  margin: auto;
-
-  &--second {
-    background-color: $color-bg-grey;
+  @include media-tablet {
+    padding-left: 50px;
+    padding-right: 50px;
   }
+
 }
