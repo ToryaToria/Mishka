@@ -1,14 +1,14 @@
 .main-header {
-padding-top: 22px;
-padding-bottom: 22px;
+  padding-top: 22px;
 }
 
-.main-header__link  {
-    display: block;
-margin: 0 auto;
+.main-header__link {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .main-header__nav {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

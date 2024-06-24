@@ -1,0 +1,7 @@
+.features {
+  @include list-reset ;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

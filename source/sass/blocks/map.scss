@@ -1,0 +1,21 @@
+.map {
+  display: block;
+  width: 100%;
+  height: 455px;
+
+  &.no-js {
+    background-image: url("../../img/tmp/location_mob.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include media-tablet {
+      background-image: url("../../img/tmp/location_tabl.jpg");
+      height: 400px;
+    }
+
+    @include media-desktop {
+      background-image: url("../../img/tmp/location_desk.jpg");
+    }
+  }
+}

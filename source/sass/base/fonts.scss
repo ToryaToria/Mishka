@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   src: url("../../fonts/opensansbold.woff2") format("woff2"),
     url("../../fonts/opensansbold.woff") format("woff");
 
@@ -12,7 +12,7 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   src: url("../../fonts/opensans.woff2") format("woff2"),
     url("../../fonts/opensans.woff") format("woff");
 
@@ -20,10 +20,10 @@
 }
 
 .text-base {
-  @include font ($size: 15px, $line-height: 24px);
+  @include font ($size: 15px, $line-height: 24px, $color: $color-text-base);
 
   @include media-tablet {
-    @include font ($size: 17px, $line-height: 30px);
+    @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);
   }
 }
 
@@ -72,3 +72,74 @@
   }
 }
 
+.xz-text {
+  @include font ($size: 19px, $line-height: 24px, $color: $color-white, $weight: 600);
+  text-decoration: none;
+
+  @include media-tablet {
+    @include font ($size: 20px, $line-height: 30px, $color: $color-white, $weight: 600);
+  }
+}
+
+.label-text {
+  @include font ($size: 17px, $line-height: 20px, $color: $color-text-second, $weight: 600, $upper: uppercase);
+}
+
+.cost-text {
+  @include font ($size: 17px, $line-height: 24px, $color: $color-text-base, $weight: 600);
+
+  @include media-tablet {
+    @include font ($size: 20px, $line-height: 24px, $color: $color-text-base, $weight: 600);
+  }
+}
+
+.btn-text {
+  @include font ($size: 18px, $line-height: 20px, $color: $color-text-base, $weight: 600, $upper: uppercase);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 20px, $color: $color-text-base, $weight: 600, $upper: uppercase);
+  }
+}
+
+.features-text {
+  @include font ($size: 17px, $line-height: 20px, $color: $color-black, $weight: 600);
+
+  @include media-tablet {
+    @include font ($size: 20px, $line-height: 22px, $color: $color-black, $weight: 600);
+  }
+}
+
+.reviews-text {
+  @include font ($size: 15px, $line-height: 30px);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 30px);
+  }
+}
+
+.signature-text {
+  @include font ($size: 17px, $line-height: 24px, $weight: 600, $color: $color-black);
+
+  @include media-tablet {
+    @include font ($size: 18px, $line-height: 24px, $weight: 600, $color: $color-black);
+  }
+
+  @include media-desktop {
+    @include font ($size: 17px, $line-height: 24px,  $weight: 600,$color: $color-black);
+  }
+}
+
+.signature-text-att {
+  @include font ($size: 17px, $line-height: 30px);
+}
+
+.contact-text {
+  @include font ($size: 14px, $line-height: 30px, $color: $color-text-base);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);
+  }
+
+  font-style: normal;
+  text-decoration: none;
+}

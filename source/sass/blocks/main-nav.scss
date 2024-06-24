@@ -1,0 +1,30 @@
+.main-nav {
+  position: relative;
+  padding-bottom: 22px;
+}
+
+.main-nav__wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  border: 1px #00ffff;
+  background-color: #ff0000;
+}
+
+.main-nav__link {
+  box-sizing: border-box;
+  display: block;
+  padding: 28px 10px 27px;
+  text-align: center;
+  border-top: 1px solid $color-line;
+}

@@ -1,0 +1,41 @@
+.xz-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.xz-link__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 30px 18px 36px;
+
+  &::after {
+    content: "";
+    display: block;
+
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.xz-link__card--light {
+  background-color: $color-bg-1;
+
+  &::after {
+    width: 40px;
+    height: 62px;
+    background-size: 40px 61px;
+    background-image: url("../../img/tmp/icon-lamp.svg");
+  }
+}
+
+.xz-link__card--dark {
+  background-color: $color-bg-2;
+
+  &::after {
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+    background-image: url("../../img/tmp/icon-lego.svg");
+  }
+}

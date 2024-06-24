@@ -1,4 +1,9 @@
 .hero {
-    padding-top: 73px;
-    padding-bottom: 120px;
+  padding-top: 73px;
+  padding-bottom: 120px;
+  background-image: url("../../img/tmp/hero-mobil.jpg");
+  background-color: $color-bg-hero;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
