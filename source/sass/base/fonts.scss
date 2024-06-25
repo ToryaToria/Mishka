@@ -81,12 +81,8 @@
   }
 }
 
-.label-text {
-  @include font ($size: 17px, $line-height: 20px, $color: $color-text-second, $weight: 600, $upper: uppercase);
-
-  @include media-tablet {
-    @include font ($size: 17px, $line-height: 17px, $color: $color-text-second, $weight: 600, $upper: uppercase);
-  }
+.subtitle {
+  @include font ($size: 17px, $line-height: 16px, $color: $color-text-second, $weight: 600, $upper: uppercase);
 }
 
 .cost-text {
@@ -173,5 +169,29 @@
 
   @include media-tablet {
     @include font ($size: 17px, $line-height: 24px, $weight: 600);
+  }
+}
+
+.text-form {
+  @include font ($size: 13px, $line-height: 24px, $color: $color-text-base);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);
+  }
+}
+
+.label-text {
+  @include font ($size: 17px, $line-height: 18px, $weight: 600);
+
+  &--input {
+    font-weight: 400;
+  }
+
+  &:placeholder-shown {
+    opacity: 0.3;
+  }
+
+  @include media-tablet {
+    @include font ($size: 19px, $line-height: 18px, $weight: 600);
   }
 }
