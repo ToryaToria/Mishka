@@ -1,0 +1,17 @@
+.main-footer__wrapp {
+  background-color: $color-bg-base;
+}
+
+.main-footer__logo-link {
+  display: none;
+}
+
+.main-footer__dev {
+  display: flex;
+  gap: 27px;
+  align-items: center;
+  width: fit-content;
+  padding-top: 30px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}

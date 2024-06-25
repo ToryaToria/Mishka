@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 28px 33px;
+  align-items: center;
+
+  border: 1px solid $color-line;
+  padding-bottom: 27px;
+}
+
+.card__img {
+  display: block;
+  width: 260px;
+  height: 195px;
+}
+
+.card__wrapp {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.card__title {
+  margin-bottom: 6px;
+}
+
+.card__text {
+  padding-bottom: 18px;
+  border-bottom: 1px solid $color-bg-base;
+}
+
+.card__prise {
+  padding-top: 23px;
+}

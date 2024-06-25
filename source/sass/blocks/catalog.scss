@@ -1,0 +1,22 @@
+.catalog {
+  padding-bottom: 58px;
+}
+
+.catalog__title {
+  padding-top: 74px;
+  padding-bottom: 74px;
+
+  background-color: $color-bg-base;
+
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-bottom: 30px;
+}
+
+.catalog__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  // align-items: center;
+}
