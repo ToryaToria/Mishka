@@ -1,9 +1,9 @@
-.xz-link {
+.promo-link {
   display: flex;
   flex-direction: column;
 }
 
-.xz-link__card {
+.promo-link__card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@
   }
 }
 
-.xz-link__card--light {
+.promo-link__card--light {
   background-color: $color-bg-1;
 
   &::after {
@@ -29,7 +29,7 @@
   }
 }
 
-.xz-link__card--dark {
+.promo-link__card--dark {
   background-color: $color-bg-2;
 
   &::after {

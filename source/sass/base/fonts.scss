@@ -72,7 +72,7 @@
   }
 }
 
-.xz-text {
+.promo-text {
   @include font ($size: 19px, $line-height: 24px, $color: $color-white, $weight: 600);
   text-decoration: none;
 
@@ -187,7 +187,7 @@
     font-weight: 400;
   }
 
-  &:placeholder-shown {
+  &::placeholder {
     opacity: 0.3;
   }
 
