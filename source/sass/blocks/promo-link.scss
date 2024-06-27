@@ -1,6 +1,10 @@
 .promo-link {
   display: flex;
   flex-direction: column;
+
+  @include media-tablet {
+    flex-direction: row;
+  }
 }
 
 .promo-link__card {
@@ -15,6 +19,11 @@
 
     background-repeat: no-repeat;
     background-position: right;
+  }
+
+  @include media-tablet {
+    padding: 25px 36px 34px 36px;
+    flex-grow: 1;
   }
 }
 

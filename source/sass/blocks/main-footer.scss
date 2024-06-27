@@ -1,9 +1,20 @@
 .main-footer__wrapp {
   background-color: $color-bg-base;
+  margin-bottom: 40px;
+
+  @include media-tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__logo-link {
   display: none;
+
+  @include media-tablet {
+    display: block;
+  }
 }
 
 .main-footer__dev {
@@ -14,4 +25,16 @@
   padding-top: 30px;
   padding-bottom: 32px;
   margin: 0 auto;
+
+  @include media-tablet {
+    margin: 0;
+  }
+}
+
+.main-footer__social {
+  margin: 0 auto;
+
+  @include media-tablet {
+    margin: 0;
+  }
 }

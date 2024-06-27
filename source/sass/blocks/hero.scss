@@ -1,9 +1,22 @@
 .hero {
+  height: 283px;
   padding-top: 73px;
-  padding-bottom: 120px;
+  padding-bottom: 10px;
   background-image: url("../../img/tmp/hero-mobil.jpg");
   background-color: $color-bg-hero;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  @include media-tablet {
+    height: 560px;
+    padding-top: 87px;
+  }
+
+  @include media-desktop {
+    height: 563px;
+    padding-top: 94px;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }

@@ -1,7 +1,7 @@
 document.body.classList.remove('no-js');
 
 let btnHamburger = document.querySelector('.hamburger');
-let ulMainNavList = document.querySelector('.main-nav__list');
+let ulMainNavList = document.querySelector('.main-nav__list-wrapp');
 
 btnHamburger.addEventListener('click', function () {
   ulMainNavList.classList.toggle('visible');

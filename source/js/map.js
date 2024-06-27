@@ -1,4 +1,4 @@
-document.querySelector('.main-footer__map').classList.remove('no-js');
+document.querySelector('.contacts__map').classList.remove('no-js');
 
 
 ymaps.ready(function () {

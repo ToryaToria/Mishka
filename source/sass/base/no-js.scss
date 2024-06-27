@@ -3,7 +3,7 @@
     display: none;
   }
 
-  body:not(.no-js) .main-nav__list:not(.visible) {
+  body:not(.no-js) .main-nav__list-wrapp:not(.visible) {
     display: none;
   }
 }

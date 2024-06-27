@@ -1,12 +1,32 @@
 .main-nav {
   position: relative;
-  padding-bottom: 22px;
+
+  @include media-tablet {
+    position: static;
+
+    display: grid;
+    grid-template-areas: "logo list-user"
+      "list-nav delivery";
+  }
+
+  @include media-desktop {
+    display: grid;
+    grid-template-areas: "list-nav logo list-user"
+      "list-add delivery delivery";
+  }
 }
 
 .main-nav__wrapp {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 22px;
+
+  @include media-tablet {
+    display: block;
+
+    grid-area: logo;
+  }
 }
 
 .main-nav__list {
@@ -16,6 +36,36 @@
   flex-direction: column;
   margin-left: -20px;
   margin-right: -20px;
+
+  @include media-tablet {
+    margin-left: 0;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+  }
+}
+
+.main-nav__list--nav {
+  @include media-tablet {
+    grid-area: list-nav;
+  }
+}
+
+.main-nav__list--user {
+  @include media-tablet {
+    grid-area: list-user;
+  }
+}
+
+.main-nav__list--additional {
+  display: none;
+
+  @include media-desktop {
+    display: flex;
+    grid-area: list-add;
+  }
 }
 
 .main-nav__link {
@@ -24,4 +74,14 @@
   padding: 28px 10px 27px;
   text-align: center;
   border-top: 1px solid $color-line;
+}
+
+.main-nav__delivery {
+  display: none;
+
+  @include media-tablet {
+    display: block;
+    text-align: right;
+    grid-area: delivery;
+  }
 }

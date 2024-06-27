@@ -1,9 +1,14 @@
 .reviews {
   padding-top: 20px;
   padding-bottom: 45px;
-  margin-bottom: 38px;
-}
 
-.reviews__title {
-  margin-bottom: 14px;
+  @include media-tablet {
+    padding-top: 79px;
+    padding-bottom: 68px;
+    margin-bottom: 46px;
+    background-image: url("../../img/tmp/bg-index.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: top left;
+  }
 }

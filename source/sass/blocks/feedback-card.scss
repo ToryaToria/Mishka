@@ -1,13 +1,52 @@
+.feedback-card {
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: auto 175px;
+    grid-template-areas: "title-card btn-card"
+      "txt txt"
+      "sign arrow";
+
+    gap: 40px 0;
+  }
+}
+
+.feedback-card__title {
+  margin-bottom: 14px;
+
+  @include media-tablet {
+    grid-area: title-card;
+  }
+}
+
 .feedback-card__text {
   margin-bottom: 33px;
+
+  @include media-tablet {
+    grid-area: txt;
+    margin-bottom: 21px;
+  }
 }
 
 .feedback-card__sign {
   margin-bottom: 30px;
+
+  @include media-tablet {
+    grid-area: sign;
+  }
 }
 
-.feedback-card__btn-wrapp {
+.feedback-card__btn-arrow {
   display: flex;
 
   margin-bottom: 38px;
+
+  @include media-tablet {
+    grid-area: arrow;
+  }
+}
+
+.feedback-card__btn {
+  @include media-tablet {
+    grid-area: btn-card;
+  }
 }
