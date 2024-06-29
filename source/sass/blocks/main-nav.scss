@@ -1,4 +1,5 @@
 .main-nav {
+  box-sizing: border-box;
   position: relative;
 
   @include media-tablet {
@@ -10,7 +11,6 @@
   }
 
   @include media-desktop {
-    display: grid;
     grid-template-areas: "list-nav logo list-user"
       "list-add delivery delivery";
   }
@@ -23,13 +23,27 @@
   padding-bottom: 22px;
 
   @include media-tablet {
-    display: block;
-
     grid-area: logo;
+    // outline: 1px solid #ff0000;
+    padding-top: 22px;
+    padding-bottom: 20px;
+
+    padding-left: 50px;
+    margin-left: -50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @include media-desktop {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .main-nav__list {
+  box-sizing: border-box;
+
   @include list-reset;
 
   display: flex;
@@ -47,15 +61,39 @@
   }
 }
 
-.main-nav__list--nav {
+.main-nav__list-wrapp {
   @include media-tablet {
     grid-area: list-nav;
+    min-width: 320px;
+  }
+}
+
+.main-nav__list--nav {
+  @include media-tablet {
+    min-width: 320px;
+    margin-left: -50px;
+    padding-left: 50px;
+
+    background-color: $color-bg-hero;
+  }
+
+  @include media-desktop {
+    // outline: 1px solid #ffff00;
+
+    background-color: $color-white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
 .main-nav__list--user {
   @include media-tablet {
+    min-width: 347px;
+    justify-content: end;
+
+    padding-right: 50px;
+    margin-right: -50px;
     grid-area: list-user;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -65,23 +103,49 @@
   @include media-desktop {
     display: flex;
     grid-area: list-add;
+
+    margin-left: -50px;
+    padding-left: 50px;
+
+    background-color: $color-bg-hero;
   }
 }
 
 .main-nav__link {
   box-sizing: border-box;
   display: block;
-  padding: 28px 10px 27px;
   text-align: center;
+
+  padding: 28px 10px 27px;
   border-top: 1px solid $color-line;
+
+  @include media-tablet {
+    border-top: none;
+    padding: 21px 0 20px;
+  }
 }
 
 .main-nav__delivery {
+  margin: 0;
   display: none;
 
   @include media-tablet {
     display: block;
+    min-width: 347px;
+
+    align-self: center;
+    padding: 21px 0 20px;
     text-align: right;
+
     grid-area: delivery;
+    background-color: $color-bg-hero;
+
+
+    padding-right: 50px;
+    margin-right: -50px;
   }
+}
+
+.main-nav__item {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
