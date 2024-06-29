@@ -8,9 +8,19 @@
   background-position: center;
   background-size: contain;
 
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
   @include media-tablet {
     height: 560px;
     padding-top: 87px;
+
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   @include media-desktop {
