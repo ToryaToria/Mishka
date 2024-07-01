@@ -2,7 +2,11 @@
   padding-top: 20px;
   padding-bottom: 45px;
 
+  width: fit-content;
+
   @include media-tablet {
+    position: relative;
+
     padding-top: 79px;
     padding-bottom: 68px;
     margin-bottom: 46px;
@@ -22,22 +26,27 @@
   margin-bottom: 14px;
 
   @include media-tablet {
-    grid-area: title-card;
+    margin-bottom: 39px;
   }
 }
 
 .reviews__btn-arrow {
   display: flex;
-
   margin-bottom: 38px;
 
   @include media-tablet {
-    grid-area: arrow;
+    position: absolute;
+    bottom: 79px;
+    right: 50px;
   }
 }
 
 .reviews__btn {
   @include media-tablet {
-    grid-area: btn-card;
+    position: absolute;
+    top: 79px;
+    right: 50px;
+
+    width: fit-content;
   }
 }
