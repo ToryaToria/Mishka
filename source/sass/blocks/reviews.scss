@@ -11,4 +11,33 @@
     background-size: 350px 457px;
     background-position: top left;
   }
+
+  @include media-desktop {
+    margin-left: 50px;
+    padding-left: 175px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 14px;
+
+  @include media-tablet {
+    grid-area: title-card;
+  }
+}
+
+.reviews__btn-arrow {
+  display: flex;
+
+  margin-bottom: 38px;
+
+  @include media-tablet {
+    grid-area: arrow;
+  }
+}
+
+.reviews__btn {
+  @include media-tablet {
+    grid-area: btn-card;
+  }
 }
