@@ -12,10 +12,10 @@
 </head>
 
 <body class="page__body text-base no-js">
-  <header class="main-header">
-    <nav class="main-header__nav main-nav container">
+  <header class="main-header container">
+    <nav class="main-header__nav main-nav ">
       <div class="main-nav__wrapp">
-        <a class="main-header__link container" href="./index.html" aria-current="page">
+        <a class="main-header__link" href="./index.html" aria-current="page">
           <img src="./img/tmp/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
         </a>
 
@@ -24,15 +24,19 @@
         </button>
       </div>
 
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
+      <div class="main-nav__list-wrapp">
+      <ul class="main-nav__list main-nav__list--nav main-nav__list--nav--second">
+        <li>
           <a class="main-nav__link text-nav" href="./catalog.html">Каталог товаров</a>
         </li>
 
-        <li class="main-nav__item">
+        <li>
           <a class="main-nav__link text-nav" href="./form.html">Вязание на заказ</a>
         </li>
+      </ul>
+      </div>
 
+      <ul class="main-nav__list main-nav__list--user">
         <li class="main-nav__item">
           <a class="main-nav__link text-nav" href="#">Поиск по сайту</a>
         </li>
@@ -41,9 +45,21 @@
           <a class="main-nav__link text-nav" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
+
+      <ul class="main-nav__list main-nav__list--additional">
+        <li>
+          <a class="main-nav__link text-nav" href="#">Новые поступления</a>
+        </li>
+
+        <li>
+          <a class="main-nav__link text-nav" href="#">Распродажа</a>
+        </li>
+      </ul>
+
+      <p class="main-nav__delivery main-nav__delivery--second text-delivery">Бесплатная доставка по России</p>
     </nav>
 
-    <h1 class="main-header__title title ">Каталог товаров</h1>
+    <h1 class="main-header__title title">Вязание на заказ</h1>
   </header>
 
   <main class="page__main">
@@ -87,7 +103,7 @@
             <h2 class="card__title catalog-title">Большая корзинка для игрушек</h2>
             <p class="card__text catalog-text">Диаметр 30 см, высота 30 см</p>
 
-            <p class="card__prise carcatalogd-prise"> 1 500 руб
+            <p class="card__prise catalog-prise"> 1 500 руб
               <button class="card-btn icon icon--basket" type="button">
                 <span class="visually-hidden">корзина</span>
               </button>
@@ -99,7 +115,10 @@
       <article class="order">
         <h2 class="order__title catalog-title">Процесс производства</h2>
 
-        <div>VIDEO (пока не знаю как вставить)</div>
+        <div class="video">
+          <!-- VIDEO (пока не знаю как вставить) -->
+          <img class="video__img" src="./img/tmp/video-mobile.jpg" alt="video" width="260" height="150">
+        </div>
 
         <p class="order__text catalog-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
           как
