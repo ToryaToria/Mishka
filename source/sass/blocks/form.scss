@@ -7,6 +7,14 @@
   align-items: center;
   gap: 16px;
 
+
+  background-color: #00ff00;
+
+  @include media-tablet {
+    width: fit-content;
+    grid-area: label;
+  }
+
   &::after {
     content: "";
     width: 100%;
@@ -20,6 +28,13 @@
   padding: 0;
   margin: 0;
   margin-bottom: 33px;
+
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 167px 1fr;
+    grid-template-areas: "label ul";
+    grid-template-rows: max-content;
+  }
 }
 
 .form__list-type {
@@ -27,6 +42,9 @@
   display: flex;
   flex-direction: column;
   gap: 11px;
+
+  background-color: #00ffff;
+  grid-area: ul;
 }
 
 .form__list-color {
@@ -34,6 +52,11 @@
   display: flex;
   flex-direction: column;
   gap: 23px;
+
+  @include media-tablet {
+    grid-area: ul;
+    background-color: #ee82ee;
+  }
 }
 
 .form__list-fio {
@@ -41,6 +64,11 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
+
+  @include media-tablet {
+    grid-area: ul;
+    background-color: #7fffd4;
+  }
 }
 
 .form__wrapp-fio {
@@ -52,6 +80,11 @@
 .form__field {
   display: block;
   border: none;
+
+  @include media-tablet {
+    grid-area: ul;
+    background-color: #a52a2a;
+  }
 }
 
 .form__line-botton {
@@ -66,4 +99,9 @@
   border: 2px solid $color-text-base;
   opacity: 1;
   padding: 17px;
+
+  @include media-tablet {
+    grid-area: ul;
+    background-color: #008b8b;
+  }
 }

@@ -4,4 +4,8 @@
 
 .section-form__description {
   margin-bottom: 37px;
+
+  @include media-tablet {
+    margin-bottom: 63px;
+  }
 }
