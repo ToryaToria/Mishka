@@ -4,4 +4,8 @@
   width: 100%;
   border: 2px solid $color-text-base;
   background-color: $color-white;
+
+  @include media-tablet {
+    width: fit-content;
+  }
 }

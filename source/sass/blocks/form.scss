@@ -1,3 +1,24 @@
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
+
+  &--dop {
+    margin-bottom: 17px;
+  }
+
+  @include media-tablet {
+    margin-bottom: 50px;
+  }
+}
+
+.form__bg-color {
+  @include media-tablet {
+    background-color: $color-line-wavy;
+  }
+}
+
 .form__legend {
   width: 100%;
   padding: 0;
@@ -7,12 +28,16 @@
   align-items: center;
   gap: 16px;
 
+  // background-color: #00ff00;
 
-  background-color: #00ff00;
+  &--cont {
+    margin-bottom: 5px;
+  }
 
   @include media-tablet {
     width: fit-content;
     grid-area: label;
+    margin-bottom: auto;
   }
 
   &::after {
@@ -23,12 +48,7 @@
   }
 }
 
-.form__fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 33px;
-
+.form__wrapp-grid {
   @include media-tablet {
     display: grid;
     grid-template-columns: 167px 1fr;
@@ -43,7 +63,7 @@
   flex-direction: column;
   gap: 11px;
 
-  background-color: #00ffff;
+  // background-color: #00ffff;
   grid-area: ul;
 }
 
@@ -55,7 +75,7 @@
 
   @include media-tablet {
     grid-area: ul;
-    background-color: #ee82ee;
+    // background-color: #ee82ee;
   }
 }
 
@@ -67,7 +87,8 @@
 
   @include media-tablet {
     grid-area: ul;
-    background-color: #7fffd4;
+    // background-color: #7fffd4;
+    gap: 24px;
   }
 }
 
@@ -80,16 +101,32 @@
 .form__field {
   display: block;
   border: none;
+  padding: 17px 10px 17px 0;
+}
+
+.form__field-cont {
+  display: block;
+  border: none;
+  padding: 16px 40px 20px 0;
 
   @include media-tablet {
     grid-area: ul;
-    background-color: #a52a2a;
+
+    // background-color: #a52a2a;
   }
 }
 
-.form__line-botton {
+.form__wrapp-fio--wrapp-flex {
+  @include media-tablet {
+    display: flex;
+    // background-color: #8b008b;
+    gap: 24px;
+    align-items: center;
+  }
+}
+
+.form__line-bottom {
   border-bottom: 2px solid $color-text-base;
-  padding-bottom: 17px;
 }
 
 .form__textarea {
@@ -102,6 +139,19 @@
 
   @include media-tablet {
     grid-area: ul;
-    background-color: #008b8b;
+    // background-color: #008b8b;
+  }
+}
+
+.form__wrapp-submit {
+  @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__text {
+  @include media-tablet {
+    order: 1;
   }
 }
