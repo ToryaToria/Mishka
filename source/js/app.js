@@ -10,7 +10,7 @@ const fun = () => {
     check = false;
     console.log('Список из дива');
     return ulMainNavList.after(list2);
-      } else
+  } else
     if (window.innerWidth < 768 && !check) {
       check = true;
       console.log('Список в див', check);

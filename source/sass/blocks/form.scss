@@ -92,10 +92,19 @@
   }
 }
 
-.form__wrapp-fio {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
+// .form__wrapp-fio {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 17px;
+// }
+
+.form__wrapp-fio--wrapp-flex {
+  @include media-tablet {
+    display: flex;
+    // background-color: #8b008b;
+    gap: 24px;
+    align-items: center;
+  }
 }
 
 .form__field {
@@ -113,15 +122,6 @@
     grid-area: ul;
 
     // background-color: #a52a2a;
-  }
-}
-
-.form__wrapp-fio--wrapp-flex {
-  @include media-tablet {
-    display: flex;
-    // background-color: #8b008b;
-    gap: 24px;
-    align-items: center;
   }
 }
 
