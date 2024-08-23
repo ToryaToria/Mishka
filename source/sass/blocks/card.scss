@@ -79,4 +79,8 @@
 
 .card__prise {
   padding-top: 23px;
+
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
 }

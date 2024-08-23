@@ -102,10 +102,10 @@
 }
 
 .features-text {
-  @include font ($size: 17px, $line-height: 20px, $color: $color-black, $weight: 600);
+  @include font ($size: 17px, $line-height: 20px, $color: $color-black, $weight: 700);
 
   @include media-tablet {
-    @include font ($size: 20px, $line-height: 22px, $color: $color-black, $weight: 600);
+    @include font ($size: 20px, $line-height: 22px, $color: $color-black, $weight: 700);
   }
 }
 

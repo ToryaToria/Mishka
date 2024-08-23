@@ -12,6 +12,14 @@
   margin-bottom: 27px;
   padding-left: 91px;
 
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 22px;
+    background-image: url("../../img/stack.svg#icon-video");
+  }
+
   @include media-tablet {
     padding-left: 107px;
     margin-bottom: 25px;
