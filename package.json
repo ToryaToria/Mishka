@@ -21,6 +21,9 @@
     "scripts": {
         "imgOpt": "gulp imgOpt",
         "build": "gulp build",
+
+        "goo": "gulp goo",
+
         "start": "gulp",
         "bemlint": "gulp lintBem --silent",
         "w3cvalidator": "html-validator --quiet",

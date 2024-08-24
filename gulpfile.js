@@ -235,3 +235,7 @@ export default gulp.series(
     build,
     server,
     watcher)
+
+    export  const goo = gulp.series(
+      server,
+      watcher)
