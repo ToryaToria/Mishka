@@ -43,9 +43,11 @@
 
 .reviews__btn-arrow {
   display: block;
-  padding: 12px 38px;
+  padding: 12px 42px 12px 38px;
   border: 1px solid $color-line;
   background-color: $color-white;
+
+  flex-grow: 1;
 }
 
 .reviews__btn {

@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 38px;
-  padding-bottom: 39px;
+  // padding-bottom: 39px;
 
   @include media-tablet {
     padding-top: 0;
@@ -39,4 +39,7 @@
   @include media-tablet {
     margin-bottom: 55px;
   }
+}
+.contacts__btn {
+  margin-bottom: 39px;
 }
