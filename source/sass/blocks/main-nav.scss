@@ -16,11 +16,19 @@
   }
 }
 
+.main-nav__not {
+  @include media-tablet {
+  display: none;
+  }
+}
+
 .main-nav__wrapp {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 22px;
+
+  background-color: #ffc0cb;
 
   @include media-tablet {
     grid-area: logo;
@@ -28,8 +36,8 @@
     padding-top: 22px;
     padding-bottom: 20px;
 
-    padding-left: 50px;
-    margin-left: -50px;
+    // padding-left: 50px;
+    // margin-left: -50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -62,7 +70,7 @@
 
     display: flex;
     flex-direction: row;
-    gap: 36px;
+    justify-content: start;
   }
 }
 
@@ -76,12 +84,19 @@
 }
 
 .main-nav__list--nav {
+  background-color: greenyellow;
+  margin-left: -50px;
+  padding-left: 50px;
+
   @include media-tablet {
     min-width: 320px;
-    margin-left: -50px;
-    padding-left: 50px;
+    gap: 36px;
 
-    background-color: $color-bg-hero;
+    margin-left: 0;
+    padding-left: 0;
+
+    // background-color: $color-bg-hero;
+
 
     &--second {
       background-color: $color-bg-base;
@@ -89,18 +104,22 @@
   }
 
   @include media-desktop {
-    background-color: $color-white;
+    // background-color: $color-white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
 .main-nav__list--user {
+  background-color: #ffa500;
+    margin-left: -50px;
+    padding-left: 50px;
+
   @include media-tablet {
     min-width: 347px;
     justify-content: end;
 
-    padding-right: 50px;
-    margin-right: -50px;
+
+
     grid-area: list-user;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -121,17 +140,20 @@
 }
 
 .main-nav__list--additional {
+background-color: rgb(124, 7, 124);
+
   @media (max-width: 1149px) {
   display: none;
   }
   @include media-desktop {
     display: flex;
     grid-area: list-add;
+    gap: 45px;
 
-    margin-left: -50px;
-    padding-left: 50px;
+    // margin-left: -50px;
+    // padding-left: 50px;
 
-    background-color: $color-bg-hero;
+    // background-color: $color-bg-hero;
   }
 }
 
@@ -147,11 +169,14 @@
     padding: 21px 0 20px;
     text-align: right;
 
-    padding-right: 50px;
-    margin-right: -50px;
+
+
+    // padding-right: 50px;
+    // margin-right: -50px;
 
     grid-area: delivery;
-    background-color: $color-bg-hero;
+    // background-color: $color-bg-hero;
+    background-color: #5e5ed4;
 
     &--second {
       background-color: $color-bg-base;

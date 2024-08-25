@@ -128,24 +128,10 @@
   mask-image: url("../../img/stack.svg#icon-telegram");
 }
 
-
-.icon--basket {
-  width: 20px;
-  height: 19px;
-  mask-repeat: no-repeat;
-  mask-size: 20px 19px;
-  mask-position: center;
-  mask-image: url("../../img/stack.svg#icon-cart");
-
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.icon--search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .icon--search::before {
+  padding: 0 26px 0 2px;
+
+  display: inline-block;
   width: 18px;
   height: 18px;
   mask-repeat: no-repeat;
@@ -154,7 +140,36 @@
   mask-image: url("../../img/stack.svg#icon-search");
 
   background-color: aqua;
+    // background-color: rgba(0, 0, 0, 0.8);
 
 
-  // background-color: rgba(0, 0, 0, 0.8);
+  @include media-tablet {
+  padding: 0 33px 0 34px;
+  }
+}
+
+.icon--basket::before {
+  display: inline-block;
+
+  padding: 0 25px 0 0;
+
+
+  width: 20px;
+  height: 19px;
+  mask-repeat: no-repeat;
+  mask-size: 20px 19px;
+  mask-position: center;
+  mask-image: url("../../img/stack.svg#icon-cart");
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+
+
+}
+
+
+.icon--search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

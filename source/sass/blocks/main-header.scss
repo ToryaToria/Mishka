@@ -1,27 +1,33 @@
 .main-header {
   padding-top: 22px;
-  // position: relative;
+  position: relative;
 
   background-color: bisque;
 
   @include media-tablet {
 
     &::after {
+
+      outline:1px solid green;
+
       content: "";
       display: block;
-      width: 100%;
+      // width: 100%;
       height: 24px;
 
-      // position: absolute;
-      // left: 0;
-      // bottom: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+			right: 0;
 
-      // z-index: 10;
+      z-index: 10;
 
-      background-image: url("../../img/stack.svg#zigzag-fill");
-      background-size: auto;
+      // background-image: url("../../img/stack.svg#zigzag-fill");
+
+      background-image: url("../../img/icons/zigzag-fill.svg");
+      background-size: contain;
       background-position: bottom;
-      background-repeat: repeat;
+      background-repeat: repeat no-repeat;
     }
   }
 
