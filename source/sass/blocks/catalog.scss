@@ -4,6 +4,10 @@
   @include media-tablet {
     padding-bottom: 64px;
   }
+
+  @include media-desktop {
+padding-bottom: 105px;
+  }
 }
 
 .catalog__list {
@@ -12,9 +16,18 @@
   flex-direction: column;
   gap: 30px;
 
+  margin-bottom: 30px;
+
+  @include media-tablet {
+    margin-bottom: 53px;
+  }
+
   @include media-desktop {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px 50px;
+    gap: 20px 55px;
+
+    margin-bottom: 57px;
   }
 }
+

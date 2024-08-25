@@ -89,14 +89,14 @@
 
     background-size: auto 17px;
   }
-  
-    @include media-desktop {
-      height: 23px;
 
-      margin-left: 0;
-      margin-right: 0;
+  @include media-desktop {
+    height: 23px;
 
-      background-size: auto 23px;
+    margin-left: 0;
+    margin-right: 0;
+
+    background-size: auto 23px;
   }
 }
 
@@ -191,6 +191,9 @@
 
 
 .icon--flag {
-  background-image: url("../../img/stack.svg#icon-flag");
-  background-position: right;
+  @include media-tablet {
+    // background-image: url("../../img/stack.svg#icon-flag");
+    background-image: url("../../img/icons/icon-flag.svg");
+    background-position: right;
+  }
 }
