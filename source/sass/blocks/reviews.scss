@@ -34,12 +34,12 @@
   display: flex;
   margin-bottom: 38px;
 
-  @include media-tablet {
-    position: absolute;
-    bottom: 79px;
-    right: 50px;
-  }
-}
+//   @include media-tablet {
+//     position: absolute;
+//     bottom: 79px;
+//     right: 50px;
+//   }
+// }
 
 .reviews__btn-arrow {
   display: block;
@@ -50,12 +50,12 @@
   flex-grow: 1;
 }
 
-.reviews__btn {
-  @include media-tablet {
-    position: absolute;
-    top: 79px;
-    right: 50px;
+// .reviews__btn {
+//   @include media-tablet {
+//     position: absolute;
+//     top: 79px;
+//     right: 50px;
 
-    width: fit-content;
-  }
+//     width: fit-content;
+//   }
 }

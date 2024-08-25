@@ -68,15 +68,15 @@
   background-image: url("../../img/stack.svg#icon-present");
 }
 
-.icon--bg-zigzag::after {
-  box-sizing: border-box;
-  width: auto;
-  height: 6px;
-  background-image: url("../../img/stack.svg#zigzag-line-desktop");
-  margin-left: -30px;
-  margin-right: -30px;
-  margin-top: 52px;
-}
+// .icon--bg-zigzag::after {
+//   box-sizing: border-box;
+//   width: auto;
+//   height: 6px;
+//   background-image: url("../../img/stack.svg#zigzag-line-desktop");
+//   margin-left: -30px;
+//   margin-right: -30px;
+//   margin-top: 52px;
+// }
 
 .icon--arr::after {
   margin-left: 0;
