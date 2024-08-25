@@ -1,7 +1,12 @@
 .features {
   @include list-reset ;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   gap: 30px;
+
+  @include media-tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 20px;
+  }
 }

@@ -44,7 +44,7 @@
 
         <li class="main-nav__item">
           <a class="main-nav__link text-nav icon icon--basket" href="#">
-          <span>Корзина: пока пуста</span>
+            <span>Корзина: пока пуста</span>
           </a>
         </li>
       </ul>
@@ -79,32 +79,34 @@
         <p class="product-card__label subtitle">Товар недели</p>
       </div>
 
-      <p class="product-card__description">Экологически чистая пряжа,
-        ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+      <div class="product-card__description-wrapp">
+        <p class="product-card__description">Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках и трёх размерах.</p>
 
-      <dl class="product-card__list">
-        <div class="product-card__property">
-          <dt class="product-card__definition">Цвет</dt>
-          <dd class="product-card__data">тиффани/серый</dd>
-        </div>
+        <dl class="product-card__list">
+          <div class="product-card__property">
+            <dt class="product-card__definition">Цвет</dt>
+            <dd class="product-card__data">тиффани/серый</dd>
+          </div>
 
-        <div class="product-card__property">
-          <dt class="product-card__definition">Диаметр:</dt>
-          <dd class="product-card__data">25 см</dd>
-        </div>
+          <div class="product-card__property">
+            <dt class="product-card__definition">Диаметр:</dt>
+            <dd class="product-card__data">25 см</dd>
+          </div>
 
-        <div class="product-card__property">
-          <dt class="product-card__definition">Высота:</dt>
-          <dd class="product-card__data">15 см</dd>
-        </div>
-      </dl>
+          <div class="product-card__property">
+            <dt class="product-card__definition">Высота:</dt>
+            <dd class="product-card__data">15 см</dd>
+          </div>
+        </dl>
 
-      <img class="product-card__img" src="./img/index-img/triple-set-mobile.jpg" alt="вязаная игрушка" width="260"
-        height="315">
+        <img class="product-card__img" src="./img/index-img/triple-set-mobile.jpg" alt="вязаная игрушка" width="260"
+          height="315">
 
-      <p class="product-card__price cost-text">Цена: 990 руб.</p>
+        <p class="product-card__price cost-text">Цена: 990 руб.</p>
 
-      <button class="product-card__btn btn-text button" type="button">Заказать</button>
+        <button class="product-card__btn btn-text button" type="button">Заказать</button>
+      </div>
     </section>
 
     <section class="about-us">
@@ -151,15 +153,18 @@
   </main>
 
   <footer class="main-footer">
-    <div class="contacts">
-      <div class="container">
-        <h2 class="contacts__title section-title">Контакты</h2>
+    <div class="contacts ">
+      <div class="container contacts__grid-text">
+        <h2 class="contacts__title section-title icon icon--flag">Контакты</h2>
 
         <div class="contacts__wrapp contact-text">
-          <p class="">e-mail: <a class="contacts__indent contacts__indent--email contact-text"
-              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+          <p class="contacts__email">
+            e-mail:
+            <a class="contacts__indent contacts__indent--email contact-text"
+              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </p>
 
-          <address class="contact-text">
+          <address class="contacts__address contact-text">
             адрес:
             <span class="contacts__indent">
               Санкт-Петербург <br>ул. Большая Конюшенная <br>д. 19/8, офис 101
@@ -171,12 +176,13 @@
       <div class="contacts__map map no-js" id="map">
         <span class="visually-hidden">карта сокровищ</span>
       </div>
-    </div>
 
 <div class="container">
-  <button class=" contacts__btn btn-text button" type="button">Напишите нам</button>
+  <button class=" contacts__btn btn-text button contacts__grid-btn" type="button">Напишите нам</button>
 </div>
-    <div class="main-footer__wrapp container">
+    </div>
+
+      <div class="main-footer__wrapp container">
 
       <a class="main-footer__logo-link" href="#">
         <img src="./img/logo/logo-footer.svg" alt="логотип Мишка" width="102" height="34">
