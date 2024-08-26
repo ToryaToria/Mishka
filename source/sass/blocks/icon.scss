@@ -189,11 +189,38 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 .icon--flag {
   @include media-tablet {
     // background-image: url("../../img/stack.svg#icon-flag");
     background-image: url("../../img/icons/icon-flag.svg");
     background-position: right;
   }
+}
+
+.icon--email::before,
+.icon--phone::before {
+  content: none;
+}
+
+.icon--email::after,
+.icon--phone::after {
+  display: inline-block;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $color-black;
+}
+
+.icon--email::after {
+  width: 25px;
+  height: 24px;
+  mask-size: 25px 24px;
+  mask-image: url("../../img/stack.svg#icon-mail");
+}
+
+.icon--phone::after {
+  width: 32px;
+  height: 21px;
+  mask-size: 32px 21px;
+  mask-image: url("../../img/stack.svg#icon-phone");
 }

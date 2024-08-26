@@ -13,7 +13,7 @@
 
 <body class="page__body text-base no-js">
   <header class="main-header container">
-    <nav class="main-header__nav main-nav ">
+    <nav class="main-header__nav main-nav">
       <div class="main-nav__wrapp">
         <a class="main-header__link" href="./index.html" aria-current="page">
           <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
@@ -38,11 +38,13 @@
 
       <ul class="main-nav__list main-nav__list--user">
         <li class="main-nav__item">
-          <a class="main-nav__link text-nav" href="#">Поиск по сайту</a>
+          <a class="main-nav__link text-nav icon icon--search" href="#">
+            <span class="main-nav__not">Поиск по сайту</span>
+          </a>
         </li>
 
         <li class="main-nav__item">
-          <a class="main-nav__link text-nav" href="#">Корзина: пока пуста</a>
+          <a class="main-nav__link text-nav icon icon--basket" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
 
@@ -77,16 +79,16 @@
             <ul class="form__list-type">
               <li>
                 <label class="control">
-                  <input class="control__input visually-hidden-" type="radio" name="type" value="Аксессуар" checked>
-                  <span class="control__mark"></span>
+                  <input class="control__input visually-hidden" type="radio" name="type" value="Аксессуар" checked>
+                  <span class="control__mark control__mark--radio"></span>
                   <span class="control__label label-text">Аксессуар для интерьера</span>
                 </label>
               </li>
 
               <li>
                 <label class="control">
-                  <input class="control__input visually-hidden-" type="radio" name="type" value="Игрушка" checked>
-                  <span class="control__mark"></span>
+                  <input class="control__input visually-hidden" type="radio" name="type" value="Игрушка" checked>
+                  <span class="control__mark control__mark--radio"></span>
                   <span class="control__label label-text">Детская игрушка</span>
                 </label>
               </li>
@@ -101,8 +103,8 @@
             <ul class="form__list-color">
               <li>
                 <label class="control">
-                  <input class="control__input visually-hidden-" type="checkbox" name="color" value="Белый" checked>
-                  <span class="control__mark"></span>
+                  <input class="control__input visually-hidden" type="checkbox" name="color" value="Белый" checked>
+                  <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Белый</span>
                 </label>
               </li>
@@ -110,7 +112,7 @@
               <li>
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Серый" checked>
-                  <span class="control__mark"></span>
+                  <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Серый</span>
                 </label>
               </li>
@@ -118,7 +120,7 @@
               <li>
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Тиффани">
-                  <span class="control__mark"></span>
+                  <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Тиффани</span>
                 </label>
               </li>
@@ -126,7 +128,7 @@
               <li>
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Черный">
-                  <span class="control__mark"></span>
+                  <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Черный</span>
                 </label>
               </li>
@@ -134,7 +136,7 @@
               <li>
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Розовый">
-                  <span class="control__mark"></span>
+                  <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Розовый</span>
                 </label>
               </li>
@@ -142,7 +144,7 @@
               <li>
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Оранжевый">
-                  <span class="control__mark"></span>
+                  <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Оранжевый</span>
                 </label>
               </li>
@@ -157,25 +159,25 @@
             <ul class="form__list-fio">
               <li class=" form__line-bottom">
                 <label class="form__wrapp-fio form__wrapp-fio--wrapp-flex label-text" for="name">
-                    <span>Имя:</span>
-                    <input class="form__field label-text label-text--input" placeholder="Введите ваше имя*" type="text"
-                      name="name" id="name" required>
+                  <span>Имя:</span>
+                  <input class="form__field label-text label-text--input" placeholder="Введите ваше имя*" type="text"
+                    name="name" id="name" required>
                 </label>
               </li>
 
               <li class="form__line-bottom">
                 <label class="form__wrapp-fio form__wrapp-fio--wrapp-flex label-text" for="Surname">
-                    <span> Фамилия:</span>
-                    <input class="form__field label-text label-text--input" placeholder="Укажите фамилию*" type="text"
-                      name="Surname" id="Surname" required>
+                  <span> Фамилия:</span>
+                  <input class="form__field label-text label-text--input" placeholder="Укажите фамилию*" type="text"
+                    name="Surname" id="Surname" required>
                 </label>
               </li>
 
               <li class="form__line-bottom">
                 <label class="form__wrapp-fio form__wrapp-fio--wrapp-flex label-text" for="patronymic">
-                    <span>Отчество:</span>
-                    <input class="form__field label-text label-text--input" placeholder="Отчество, если желаете"
-                      type="text" name="patronymic" id="patronymic">
+                  <span>Отчество:</span>
+                  <input class="form__field label-text label-text--input" placeholder="Отчество, если желаете"
+                    type="text" name="patronymic" id="patronymic">
                 </label>
               </li>
             </ul>
@@ -186,9 +188,11 @@
           <div class="form__wrapp-grid">
             <p class="form__legend form__legend--cont subtitle">Тел</p>
 
-            <label class="visually-hidden" for="phone">телефон</label>
-            <input class="form__field-cont form__line-bottom label-text label-text--input"
-              placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="phone" id="phone" required>
+            <label class="form__icon icon icon--phone" for="phone">
+              <span class="visually-hidden">телефон</span>
+              <input class="form__field-cont form__line-bottom label-text label-text--input"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="phone" id="phone" required>
+            </label>
           </div>
         </fieldset>
 
@@ -196,9 +200,11 @@
           <div class="form__wrapp-grid">
             <p class="form__legend form__legend--cont subtitle">E-mail</p>
 
-            <label class="visually-hidden" for="email">E-mail</label>
-            <input class="form__field-cont form__line-bottom label-text label-text--input" placeholder="Ваш Email*"
-              type="email" name="email" id="email" required>
+            <label class="form__icon icon icon--email" for="email">
+              <span class="visually-hidden">E-mail</span>
+              <input class="form__field-cont form__line-bottom label-text label-text--input" placeholder="Ваш Email*"
+                type="email" name="email" id="email" required>
+            </label>
           </div>
         </fieldset>
 
@@ -222,28 +228,28 @@
   </main>
 
   <footer class="main-footer">
-
     <div class="main-footer__wrapp container">
+
       <a class="main-footer__logo-link" href="#">
         <img src="./img/logo/logo-footer.svg" alt="логотип Мишка" width="102" height="34">
       </a>
 
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#">
-            <span class="visually-hidden-">ВК</span>
+          <a class="social__link icon icon--social icon--vk" href="#">
+            <span class="visually-hidden">ВК</span>
           </a>
         </li>
 
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden-">youtube</span>
+          <a class="social__link icon icon--social icon--youtube " href="#">
+            <span class="visually-hidden">youtube</span>
           </a>
         </li>
 
         <li class="social__item">
-          <a class="social__link social__link--telegramm" href="#">
-            <span class="visually-hidden-">telegramm</span>
+          <a class="social__link icon icon--social icon--telegramm" href="#">
+            <span class="visually-hidden">telegramm</span>
           </a>
         </li>
       </ul>

@@ -18,7 +18,7 @@
 
 .main-nav__not {
   @include media-tablet {
-  display: none;
+    display: none;
   }
 }
 
@@ -59,6 +59,7 @@
 
   margin-left: -30px;
   margin-right: -30px;
+  // padding-left: 30px;
 
   display: flex;
   flex-direction: column;
@@ -85,8 +86,8 @@
 
 .main-nav__list--nav {
   background-color: greenyellow;
-  margin-left: -50px;
-  padding-left: 50px;
+  // margin-left: -50px;
+  // padding-left: 50px;
 
   @include media-tablet {
     min-width: 320px;
@@ -111,15 +112,12 @@
 
 .main-nav__list--user {
   background-color: #ffa500;
-    margin-left: -50px;
-    padding-left: 50px;
+  // margin-left: -50px;
+  // padding-left: 50px;
 
   @include media-tablet {
     min-width: 347px;
     justify-content: end;
-
-
-
     grid-area: list-user;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -131,20 +129,31 @@
   // text-align: center;
 
   padding: 28px 0 27px;
+    padding-left: 30px;
+
   border-top: 1px solid $color-line;
 
-   @include media-tablet {
+  @include media-tablet {
     border-top: none;
     padding: 21px 0 20px;
   }
 }
 
+.main-nav__link--noicons {
+  padding-left: 75px;
+
+  @include media-tablet {
+  margin-left: 0;
+  }
+}
+
 .main-nav__list--additional {
-background-color: rgb(124, 7, 124);
+  background-color: rgb(124, 7, 124);
 
   @media (max-width: 1149px) {
-  display: none;
+    display: none;
   }
+
   @include media-desktop {
     display: flex;
     grid-area: list-add;
@@ -185,5 +194,7 @@ background-color: rgb(124, 7, 124);
 }
 
 .main-nav__item {
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  @include media-tablet {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }

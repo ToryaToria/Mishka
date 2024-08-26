@@ -8,4 +8,9 @@
   @include media-tablet {
     margin-bottom: 63px;
   }
+
+  @include media-desktop {
+    padding-right: 173px;
+    padding-left: 174px;
+  }
 }
