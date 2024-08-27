@@ -2,13 +2,14 @@
   padding-top: 22px;
   position: relative;
 
-  background-color: bisque;
+  // background-color: bisque;
 
   @include media-tablet {
+    padding-top: 0;
 
     &::after {
 
-      outline:1px solid green;
+      // outline:1px solid green;
 
       content: "";
       display: block;
@@ -17,8 +18,8 @@
 
       position: absolute;
       left: 0;
-      bottom: 0;
-			right: 0;
+      bottom: -10px;
+      right: 0;
 
       z-index: 10;
 
@@ -28,12 +29,16 @@
       background-size: contain;
       background-position: bottom;
       background-repeat: repeat no-repeat;
+
+      @include media-desktop {
+        bottom: -20px;
+     }
     }
   }
 
   @include media-desktop {
     &::after {
-    height: 34px;
+      height: 34px;
     }
   }
 }

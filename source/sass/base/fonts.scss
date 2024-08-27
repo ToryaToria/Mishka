@@ -52,7 +52,9 @@
   }
 
   @include media-desktop {
-    @include font ($size: 53px, $line-height: 57px, $weight: 600);
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -110,10 +112,10 @@
 }
 
 .reviews-text {
-  @include font ($size: 15px, $line-height: 30px);
+  @include font ($size: 15px, $line-height: 30px,  $color: $color-text-base);
 
   @include media-tablet {
-    @include font ($size: 17px, $line-height: 30px);
+    @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);
   }
 }
 

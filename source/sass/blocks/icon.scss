@@ -74,12 +74,12 @@
   height: 6px;
   // background-image: url("../../img/stack.svg#zigzag-line-desktop");
   background-image: url("../../img/icons/zigzag-line-desktop.svg");
-  background-repeat: repeat;
+  background-repeat: repeat no-repeat;
   background-size: auto 6px;
 
   margin-left: -30px;
   margin-right: -30px;
-  margin-top: 52px;
+  margin-top: 105px;
 
   @include media-tablet {
     height: 17px;
@@ -93,8 +93,10 @@
   @include media-desktop {
     height: 23px;
 
-    margin-left: 0;
     margin-right: 0;
+    margin-left: -175px;
+    margin-top: 150px;
+
 
     background-size: auto 23px;
   }
@@ -171,7 +173,7 @@
 
 
   @include media-tablet {
-    padding: 0 33px 0 34px;
+    padding: 15px 33px 14px 34px;
   }
 }
 
@@ -187,15 +189,31 @@
   mask-image: url("../../img/stack.svg#icon-cart");
 
   background-color: rgba(0, 0, 0, 0.8);
-}
 
-.icon--flag {
   @include media-tablet {
-    // background-image: url("../../img/stack.svg#icon-flag");
-    background-image: url("../../img/icons/icon-flag.svg");
-    background-position: right;
+    padding: 15px 33px 14px 34px;
   }
 }
+
+.icon--flag::after {
+  @include media-tablet {
+    width: 47px;
+    height: 81px;
+
+    background-image: url("../../img/stack.svg#icon-flag");
+  }
+
+  @include media-desktop {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  }
+}
+.icon--flag::before {
+  display: none;
+}
+
+
 
 .icon--email::before,
 .icon--phone::before {

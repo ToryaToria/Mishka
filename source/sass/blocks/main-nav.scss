@@ -28,7 +28,7 @@
   align-items: center;
   padding-bottom: 22px;
 
-  background-color: #ffc0cb;
+  // background-color: #ffc0cb;
 
   @include media-tablet {
     grid-area: logo;
@@ -85,7 +85,7 @@
 }
 
 .main-nav__list--nav {
-  background-color: greenyellow;
+  // background-color: greenyellow;
   // margin-left: -50px;
   // padding-left: 50px;
 
@@ -93,10 +93,10 @@
     min-width: 320px;
     gap: 36px;
 
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: -50px;
+    padding-left: 50px;
 
-    // background-color: $color-bg-hero;
+    background-color: $color-bg-hero;
 
 
     &--second {
@@ -105,13 +105,13 @@
   }
 
   @include media-desktop {
-    // background-color: $color-white;
+    background-color: $color-white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
 .main-nav__list--user {
-  background-color: #ffa500;
+  // background-color: #ffa500;
   // margin-left: -50px;
   // padding-left: 50px;
 
@@ -120,6 +120,9 @@
     justify-content: end;
     grid-area: list-user;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    padding-right: 50px;
+    margin-right: -50px;
   }
 }
 
@@ -129,13 +132,15 @@
   // text-align: center;
 
   padding: 28px 0 27px;
-    padding-left: 30px;
+  padding-left: 30px;
 
   border-top: 1px solid $color-line;
 
   @include media-tablet {
     border-top: none;
     padding: 21px 0 20px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -143,12 +148,14 @@
   padding-left: 75px;
 
   @include media-tablet {
-  margin-left: 0;
-  }
+    margin-left: 0;
+    padding-top: 32px;
+    padding-bottom: 33px;
+    }
 }
 
 .main-nav__list--additional {
-  background-color: rgb(124, 7, 124);
+  // background-color: rgb(124, 7, 124);
 
   @media (max-width: 1149px) {
     display: none;
@@ -159,10 +166,10 @@
     grid-area: list-add;
     gap: 45px;
 
-    // margin-left: -50px;
-    // padding-left: 50px;
+    margin-left: -50px;
+    padding-left: 50px;
 
-    // background-color: $color-bg-hero;
+    background-color: $color-bg-hero;
   }
 }
 
@@ -178,14 +185,12 @@
     padding: 21px 0 20px;
     text-align: right;
 
-
-
-    // padding-right: 50px;
-    // margin-right: -50px;
+    padding-right: 50px;
+    margin-right: -50px;
 
     grid-area: delivery;
-    // background-color: $color-bg-hero;
-    background-color: #5e5ed4;
+    background-color: $color-bg-hero;
+    // background-color: #5e5ed4;
 
     &--second {
       background-color: $color-bg-base;

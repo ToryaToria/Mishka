@@ -11,6 +11,10 @@
   @include media-tablet {
     margin-bottom: 50px;
   }
+
+  @include media-desktop {
+    padding-left: 46px;
+  }
 }
 
 .form__bg-color {
@@ -18,6 +22,28 @@
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: $color-line-wavy;
+    margin-left: -50px;
+    padding-left: 50px;
+    margin-right: -50px;
+    padding-right: 50px;
+  }
+
+  @include media-desktop {
+    padding-left: 96px;
+
+  }
+}
+
+.form__bg-color--tel {
+  @include media-tablet {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.form__bg-color--email {
+  @include media-tablet {
+    padding-top: 24px;
   }
 }
 
@@ -60,7 +86,7 @@
   }
 
   @include media-desktop {
-    grid-template-columns: 174px 1fr;
+    grid-template-columns: 130px 1fr;
     padding-right: 173px;
   }
 }
@@ -104,7 +130,7 @@
   }
 }
 
-.form__wrapp-fio--wrapp-flex {
+.form__wrapp-fio {
   @include media-tablet {
     display: flex;
     // background-color: #8b008b;
@@ -114,9 +140,14 @@
 }
 
 .form__field {
+  box-sizing: border-box;
+  width: 100%;
+
   display: block;
   border: none;
   padding: 17px 10px 17px 0;
+
+  outline: 1px solid #ee82ee;
 }
 
 .form__icon {
@@ -150,14 +181,18 @@
 
 .form__field-cont {
   display: block;
+  width: 100%;
+  box-sizing: border-box;
+
   border: none;
   padding: 16px 40px 20px 0;
+
+  outline: 1px solid #82c3ee;
 
   @include media-tablet {
     // grid-area: ul;
 
     background-color: transparent;
-    width: 100%;
   }
 }
 

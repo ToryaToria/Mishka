@@ -6,6 +6,10 @@
     padding-top: 56px;
     padding-bottom: 83px;
   }
+
+  @include media-desktop {
+    padding-left: 175px;
+  }
 }
 
 .about-us__title {
