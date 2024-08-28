@@ -6,8 +6,10 @@
 
   @include media-tablet {
     padding-top: 0;
+  }
 
-    &::after {
+  &::after {
+    @include media-tablet {
 
       // outline:1px solid green;
 
@@ -29,15 +31,10 @@
       background-size: contain;
       background-position: bottom;
       background-repeat: repeat no-repeat;
-
-      @include media-desktop {
-        bottom: -20px;
-     }
     }
-  }
 
-  @include media-desktop {
-    &::after {
+    @include media-desktop {
+      bottom: -20px;
       height: 34px;
     }
   }

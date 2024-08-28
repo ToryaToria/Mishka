@@ -168,9 +168,7 @@
   mask-position: center;
   mask-image: url("../../img/stack.svg#icon-search");
 
-  background-color: aqua;
-  // background-color: rgba(0, 0, 0, 0.8);
-
+  background-color: rgba(0, 0, 0, 0.8);
 
   @include media-tablet {
     padding: 15px 33px 14px 34px;
@@ -204,16 +202,15 @@
   }
 
   @include media-desktop {
-  position: absolute;
-  top: 0;
-  left: -100px;
+    position: absolute;
+    top: 0;
+    left: -100px;
   }
 }
+
 .icon--flag::before {
   display: none;
 }
-
-
 
 .icon--email::before,
 .icon--phone::before {

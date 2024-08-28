@@ -34,32 +34,32 @@
   display: flex;
   margin-bottom: 38px;
 
-    @include media-tablet {
-      position: absolute;
-      bottom: 90px;
-      right: 0;
-    }
+  @include media-tablet {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
   }
+}
 
-  .reviews__btn-arrow {
-    display: block;
-    padding: 12px 42px 12px 38px;
-    border: 1px solid $color-line;
-    background-color: $color-white;
+.reviews__btn-arrow {
+  display: block;
+  padding: 12px 42px 12px 38px;
+  border: 1px solid $color-line;
+  background-color: $color-white;
 
-    flex-grow: 1;
+  flex-grow: 1;
 
-    @include media-tablet {
-      border: none;
-    }
+  @include media-tablet {
+    border: none;
   }
+}
 
-  .reviews__btn {
-    @include media-tablet {
-      position: absolute;
-      top: 79px;
-      right: 0;
+.reviews__btn {
+  @include media-tablet {
+    position: absolute;
+    top: 79px;
+    right: 0;
 
-      width: fit-content;
-    }
+    width: fit-content;
   }
+}
