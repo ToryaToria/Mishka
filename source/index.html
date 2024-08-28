@@ -101,12 +101,28 @@
           </div>
         </dl>
 
-        <img class="product-card__img" src="./img/index-img/triple-set-mobile.jpg" alt="вязаная игрушка" width="260"
-          height="315">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="./img/index-img/triple-set-desktop.webp 1x,
+          ./img/index-img/triple-set-desktop-@2x.webp 2x" width="525" height="636">
 
-        <p class="product-card__price cost-text">Цена: 990 руб.</p>
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/index-img/triple-set-tablet.webp 1x,
+          ./img/index-img/triple-set-tablet-@2x.webp 2x" width="334" height="404">
 
-        <button class="product-card__btn btn-text button" type="button">Заказать</button>
+          <source type="image/webp" srcset="./img/index-img/triple-set-mobile.webp 1x,
+          ./img/index-img/triple-set-mobile-@2x.webp 2x" width="260" height="315">
+
+          <source type="image/jpg" media="(min-width:1150px)" srcset="./img/index-img/triple-set-desktop.jpg 1x,
+          ./img/index-img/triple-set-desktop-@2x.jpg 2x" width="525" height="636">
+
+          <source type="image/jpg" media="(min-width:768px)" srcset="./img/index-img/triple-set-tablet.jpg 1x,
+          ./img/index-img/triple-set-tablet-@2x.jpg 2x" width="334" height="404">
+
+          <img class="product-card__img" src="./img/index-img/triple-set-mobile.jpg"
+            srcset="./img/index-img/triple-set-mobile-@2x.jpg 2x" alt="вязаная игрушка" width="260" height="315">
+
+          <p class="product-card__price cost-text">Цена: 990 руб.</p>
+
+          <button class="product-card__btn btn-text button" type="button">Заказать</button>
       </div>
     </section>
 
