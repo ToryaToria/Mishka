@@ -15,7 +15,13 @@
     <nav class="main-header__nav main-nav">
       <div class="main-nav__wrapp">
         <a class="main-header__link" href="./index.html" aria-current="page">
-          <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
+
+          <picture>
+            <source media="(min-width:1150px)" srcset="./img/logo/mishka-logo-desktop.svg" width="149" height="72">
+            <source media="(min-width:768px)" srcset="./img/logo/mishka-logo-tablet.svg" width="113" height="46">
+            <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
+          </picture>
+
         </a>
 
         <button class="hamburger hamburger--open" type="button" aria-label="открыть меню">
@@ -101,7 +107,7 @@
           </div>
         </dl>
 
-        <picture>
+        <picture  class="product-card__img">
           <source type="image/webp" media="(min-width: 1150px)" srcset="./img/index-img/triple-set-desktop.webp 1x,
           ./img/index-img/triple-set-desktop-@2x.webp 2x" width="525" height="636">
 
@@ -117,8 +123,9 @@
           <source type="image/jpg" media="(min-width:768px)" srcset="./img/index-img/triple-set-tablet.jpg 1x,
           ./img/index-img/triple-set-tablet-@2x.jpg 2x" width="334" height="404">
 
-          <img class="product-card__img" src="./img/index-img/triple-set-mobile.jpg"
+          <img  class="product-card__img" src="./img/index-img/triple-set-mobile.jpg"
             srcset="./img/index-img/triple-set-mobile-@2x.jpg 2x" alt="вязаная игрушка" width="260" height="315">
+        </picture>
 
           <p class="product-card__price cost-text">Цена: 990 руб.</p>
 
@@ -235,7 +242,7 @@
   </footer>
 
   <script src="./js/app.js"></script>
-  <script src="./js/map.js"></script>
+  <script src="./js/map.js-"></script>
 </body>
 
 </html>
