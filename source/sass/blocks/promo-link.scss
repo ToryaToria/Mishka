@@ -18,6 +18,10 @@
   align-items: center;
   padding: 23px 30px 18px 36px;
 
+  &:hover {
+    padding-top: 28px;
+  }
+
   &::after {
     content: "";
     display: block;

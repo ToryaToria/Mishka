@@ -168,12 +168,24 @@
   mask-position: center;
   mask-image: url("../../img/stack.svg#icon-search");
 
-  background-color: rgba(0, 0, 0, 0.8);
+  // background-color: rgba(0, 0, 0, 0.8);
 
-  @include media-tablet {
+  background-color: #ff0000;
+
+   @include media-tablet {
     padding: 15px 33px 14px 34px;
   }
 }
+
+.icon--search:hover:before,
+.icon--basket:hover:before {
+  background-color:$color-text-second;
+}
+
+.icon--search:active:before,
+.icon--basket:active:before {
+opacity: 0.3;}
+
 
 .icon--basket::before {
   display: inline-block;

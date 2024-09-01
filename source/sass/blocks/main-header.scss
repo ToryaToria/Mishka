@@ -8,7 +8,7 @@
     padding-top: 0;
   }
 
-  &::after {
+  &--index::after {
     @include media-tablet {
 
       // outline:1px solid green;
@@ -44,6 +44,16 @@
   display: block;
   margin: 0 auto;
   width: fit-content;
+
+  transition: opacity .3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @include media-tablet {
     margin-right: auto;
