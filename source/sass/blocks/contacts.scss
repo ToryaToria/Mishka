@@ -90,6 +90,16 @@
   background-color: $color-line-link;
 }
 
+.contacts__indent--email:hover {
+  color: $color-link-hover;
+}
+
+.contacts__indent--email:active {
+  .contacts__indent--email::after {  // НЕ РАБОТАЕТ!!!
+    opacity: 0.1;
+  }
+}
+
 .contacts__map {
   margin-bottom: 42px;
 

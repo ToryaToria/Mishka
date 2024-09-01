@@ -16,21 +16,6 @@
   }
 }
 
-.main-nav__not {
-
-  &:hover {
-    opacity: 0.6;
-    }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @include media-tablet {
-    display: none;
-  }
-}
-
 .main-nav__wrapp {
   display: flex;
   justify-content: space-between;
@@ -147,26 +132,30 @@
 
   transition: opacity .3s ease-in-out;
 
-   @include media-tablet {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include media-tablet {
     border-top: none;
     padding: 21px 0 20px;
     display: flex;
     align-items: center;
   }
 }
-
-
+.main-nav__link:hover::before
+// ,
+// .main-nav__link:hover .icon--basket::before  // ПОЧЕМУ ЭТО НЕ РАБОТАЕТ?
+{
+  background-color: $color-text-second;
+}
 
 .main-nav__link--noicons {
   padding-left: 75px;
-
-  &:hover {
-    opacity: 0.6;
-    }
-
-  &:active {
-    opacity: 0.3;
-  }
 
   @include media-tablet {
     margin-left: 0;
@@ -174,6 +163,18 @@
     padding-bottom: 33px;
   }
 }
+
+.main-nav__not {
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+
+
+
+
 
 
 

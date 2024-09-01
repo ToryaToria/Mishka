@@ -5,6 +5,14 @@
   padding-bottom: 51px;
   border: 1px solid $color-line;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+  }
+
   @include media-tablet {
     padding-bottom: 46px;
   }
@@ -67,6 +75,7 @@
     flex-direction: column;
     align-items: start;
 
+    padding-top: 20px;
     padding-left: 0;
     padding-right: 110px;
   }
@@ -109,5 +118,20 @@
   @include media-desktop {
     grid-area: video;
     margin-bottom: 0;
+  }
+}
+
+.order__img {
+  display: block;
+  width: 260px;
+  height: 150px;
+
+  @include media-tablet {
+    width: 668px;
+    height: 455px;
+    }
+
+  @include media-desktop {
+    width: 683px;
   }
 }

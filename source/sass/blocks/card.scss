@@ -7,6 +7,29 @@
   border: 1px solid $color-line;
   padding-bottom: 27px;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+    .card__prise {
+      opacity: 0.6;
+    }
+
+    .icon--basket::before {
+    background-color:$color-bg-1;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+
+    .card__prise {
+      opacity: 0.3;
+    }
+
+    .icon--basket::before {
+    background-color:$color-bg-1;
+    }
+  }
+
   @include media-tablet {
     min-height: 100%;
     flex-direction: row;
@@ -20,6 +43,7 @@
     flex-direction: column;
   }
 }
+
 
 .card__img {
   display: block;

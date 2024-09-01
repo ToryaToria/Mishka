@@ -18,8 +18,14 @@
   align-items: center;
   padding: 23px 30px 18px 36px;
 
+  transition: transform .3s ease-in-out;
+
   &:hover {
-    padding-top: 28px;
+    transform: translateY(-5px);
+
+    .promo-link__card--light::after {   // ПОЧЕМУ НЕ РАБОТАЕТ?
+      opacity: 0.3;
+      }
   }
 
   &::after {
@@ -35,6 +41,10 @@
     flex-grow: 1;
   }
 }
+
+// .promo-link__card:hover .promo-link__card--light::after {   // ПОЧЕМУ НЕ РАБОТАЕТ?
+// opacity: 0.3;
+// }
 
 .promo-link__card--light {
   background-color: $color-bg-1;

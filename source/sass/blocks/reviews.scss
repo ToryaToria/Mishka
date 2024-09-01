@@ -54,6 +54,17 @@
 
   flex-grow: 1;
 
+  transition: opacity 0.3s ease-in-out;
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include media-tablet {
     border: none;
   }

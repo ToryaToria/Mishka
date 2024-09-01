@@ -5,7 +5,16 @@
   border: 2px solid $color-text-base;
   background-color: $color-white;
 
-  @include media-tablet {
-    // width: fit-content;
-  }
+  transition: color, background-color 0.3s ease-in-out;
+
+
+&:hover {
+  background-color: $color-text-base;
+  color: $color-white;
 }
+
+&:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+}
+
