@@ -94,10 +94,8 @@
   color: $color-link-hover;
 }
 
-.contacts__indent--email:active {
-  .contacts__indent--email::after {  // НЕ РАБОТАЕТ!!!
-    opacity: 0.1;
-  }
+.contacts__indent--email:active::after {
+  opacity: 0.1;
 }
 
 .contacts__map {

@@ -146,7 +146,46 @@
   border: none;
   padding: 17px 10px 17px 0;
 
+  border-bottom: 2px solid $color-text-base;
+
   outline: 1px solid #ee82ee;
+
+	appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &:not(:disabled):hover {
+    border-color: $color-line-link;
+  }
+
+  &:not(:disabled):focus {
+    // outline: none;
+    outline: 2px solid $color-line-link;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: $color-error;
+    outline: 2px solid $color-error;
+  }
+}
+
+.form__field--cont {
+    padding: 16px 40px 20px 0;
+
+  outline: 1px solid #82c3ee;
+
+  @include media-tablet {
+    // grid-area: ul;
+
+    background-color: transparent;
+  }
 }
 
 .form__icon {
@@ -168,36 +207,16 @@
   // }
 }
 
-// .icon--email:has(.form__field:not(:disabled):focus)::after,
-// .icon--phone:has(.form__field:not(:disabled):focus)::after {  //цвет менялся
-//   background-color: $color-bg-base;
-// }
-
-// .icon--email:has(.form__field:not(:placeholder-shown):invalid)::after,
-// .icon--phone:has(.form__field:not(:placeholder-shown):invalid)::after {
-//   background-color:$color-error;
-// }
-
-.form__field-cont {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-
-  border: none;
-  padding: 16px 40px 20px 0;
-
-  outline: 1px solid #82c3ee;
-
-  @include media-tablet {
-    // grid-area: ul;
-
-    background-color: transparent;
-  }
+.icon--email:has(.form__field:not(:disabled):focus)::after,
+.icon--phone:has(.form__field:not(:disabled):focus)::after {  //цвет менялся
+  background-color:$color-line-link;
 }
 
-.form__line-bottom {
-  border-bottom: 2px solid $color-text-base;
+.icon--email:has(.form__field:not(:placeholder-shown):invalid)::after,
+.icon--phone:has(.form__field:not(:placeholder-shown):invalid)::after {
+  background-color:$color-error;
 }
+
 
 .form__textarea {
   box-sizing: border-box;
@@ -211,6 +230,10 @@
     grid-area: ul;
     // background-color: #008b8b;
   }
+}
+
+.form__textarea:not(:disabled):hover {
+  border-color: #62d1ba;
 }
 
 .form__wrapp-submit {

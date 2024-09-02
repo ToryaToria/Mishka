@@ -17,7 +17,7 @@
   flex-shrink: 0;
 
   background-color: $color-white;
-  border: 1px solid $color-text-base;
+  border: 2px solid $color-text-base;
 }
 
 .control__mark--radio {
@@ -75,7 +75,12 @@
 
 .control__input:not(:disabled):hover + .control__mark--radio,
 .control__input:not(:disabled):hover + .control__mark--check {
-  border-color: #adff2f;
+  border-color: $color-line-link;
+}
+
+.control__input:not(:disabled):active + .control__mark--radio,
+.control__input:not(:disabled):active + .control__mark--check {
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .control__input:not(:disabled):focus + .control__mark--radio,

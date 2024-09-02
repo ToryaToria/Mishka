@@ -23,7 +23,7 @@
   &:hover {
     transform: translateY(-5px);
 
-    .promo-link__card--light::after {   // ПОЧЕМУ НЕ РАБОТАЕТ?
+    &::after {   // ПОЧЕМУ НЕ РАБОТАЕТ?
       opacity: 0.3;
       }
   }
@@ -34,6 +34,8 @@
 
     background-repeat: no-repeat;
     background-position: right;
+    transition: opacity .3s ease-in-out;
+
   }
 
   @include media-tablet {
@@ -41,10 +43,6 @@
     flex-grow: 1;
   }
 }
-
-// .promo-link__card:hover .promo-link__card--light::after {   // ПОЧЕМУ НЕ РАБОТАЕТ?
-// opacity: 0.3;
-// }
 
 .promo-link__card--light {
   background-color: $color-bg-1;

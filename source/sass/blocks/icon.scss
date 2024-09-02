@@ -137,6 +137,14 @@
     mask-size: 28px 22px;
     mask-position: center;
   }
+
+  &:hover::before {
+    background-color: $color-link-hover;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .icon--vk::before {
