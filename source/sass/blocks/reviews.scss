@@ -2,7 +2,7 @@
   padding-top: 20px;
   // margin-bottom: 45px;
 
-  width: fit-content;
+  // width: fit-content;
 
   @include media-tablet {
     position: relative;
@@ -47,8 +47,9 @@
 }
 
 .reviews__btn-arrow {
+  box-sizing: border-box;
   display: block;
-  padding: 12px 42px 12px 38px;
+  padding: 12px 40px 12px 38px;
   border: 1px solid $color-line;
   background-color: $color-white;
 
