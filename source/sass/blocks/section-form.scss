@@ -1,0 +1,16 @@
+.section-form {
+  margin-bottom: 55px;
+}
+
+.section-form__description {
+  margin-bottom: 37px;
+
+  @include media-tablet {
+    margin-bottom: 63px;
+  }
+
+  @include media-desktop {
+    padding-right: 173px;
+    padding-left: 174px;
+  }
+}

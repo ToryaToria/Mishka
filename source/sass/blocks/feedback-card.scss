@@ -1,0 +1,16 @@
+.feedback-card__text {
+  margin-bottom: 33px;
+
+  @include media-tablet {
+    grid-area: txt;
+    margin-bottom: 61px;
+  }
+}
+
+.feedback-card__sign {
+  margin-bottom: 30px;
+
+  @include media-tablet {
+    grid-area: sign;
+  }
+}

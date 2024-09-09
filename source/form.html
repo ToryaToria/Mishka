@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mishka-заявка</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ce5ae139-a744-4115-8799-62072c511524&lang=ru_RU"></script>
+</head>
+
+<body class="page__body text-base no-js">
+  <header class="main-header container">
+    <nav class="main-header__nav main-nav">
+      <div class="main-nav__wrapp">
+        <a class="main-header__link" href="./index.html" aria-current="page">
+          <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
+        </a>
+
+        <button class="hamburger hamburger--open" type="button" aria-label="открыть меню">
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </div>
+
+      <div class="main-nav__list-wrapp">
+        <ul class="main-nav__list main-nav__list--nav main-nav__list--nav-second">
+          <li>
+            <a class="main-nav__link text-nav" href="./catalog.html">Каталог товаров</a>
+          </li>
+
+          <li>
+            <a class="main-nav__link text-nav" href="./form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="main-nav__list main-nav__list--user">
+        <li class="main-nav__item">
+          <a class="main-nav__link text-nav icon icon--search" href="#">
+            <span class="main-nav__not">Поиск по сайту</span>
+          </a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link text-nav icon icon--basket" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list--additional">
+        <li>
+          <a class="main-nav__link text-nav" href="#">Новые поступления</a>
+        </li>
+
+        <li>
+          <a class="main-nav__link text-nav" href="#">Распродажа</a>
+        </li>
+      </ul>
+
+      <p class="main-nav__delivery main-nav__delivery--second text-delivery">Бесплатная доставка по России</p>
+    </nav>
+
+    <h1 class="main-header__title title">Вязание на заказ</h1>
+  </header>
+
+  <main class="page__main">
+    <section class="section-form container">
+      <h2 class="visually-hidden">Форма заказа товаров</h2>
+      <p class="section-form__description text-form">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+        форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form__fieldset">
+          <div class="form__wrapp-grid">
+            <p class="form__legend subtitle">Тип</p>
+
+            <ul class="form__list-type">
+              <li>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="radio" name="type" value="Аксессуар" checked>
+                  <span class="control__mark control__mark--radio"></span>
+                  <span class="control__label label-text">Аксессуар для интерьера</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="radio" name="type" value="Игрушка" checked>
+                  <span class="control__mark control__mark--radio"></span>
+                  <span class="control__label label-text">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset form__bg-color">
+          <div class="form__wrapp-grid">
+            <p class="form__legend subtitle">Цвет</p>
+
+            <ul class="form__list-color">
+              <li>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="color" value="Белый" checked>
+                  <span class="control__mark control__mark--check"></span>
+                  <span class="control__label label-text">Белый</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="color" value="Серый" checked>
+                  <span class="control__mark control__mark--check"></span>
+                  <span class="control__label label-text">Серый</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="color" value="Тиффани">
+                  <span class="control__mark control__mark--check"></span>
+                  <span class="control__label label-text">Тиффани</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="color" value="Черный">
+                  <span class="control__mark control__mark--check"></span>
+                  <span class="control__label label-text">Черный</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="color" value="Розовый">
+                  <span class="control__mark control__mark--check"></span>
+                  <span class="control__label label-text">Розовый</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="color" value="Оранжевый">
+                  <span class="control__mark control__mark--check"></span>
+                  <span class="control__label label-text">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <div class="form__wrapp-grid">
+            <p class="form__legend subtitle">ФИО</p>
+
+            <ul class="form__list-fio">
+              <li class=" ">
+                <label class="form__wrapp-fio label-text" for="name">
+                  <span>Имя:</span>
+                  <input class="form__field label-text label-text--input" placeholder="Введите ваше имя*" type="text"
+                    name="name" id="name" required>
+                </label>
+              </li>
+
+              <li class="">
+                <label class="form__wrapp-fio label-text" for="Surname">
+                  <span> Фамилия:</span>
+                  <input class="form__field label-text label-text--input" placeholder="Укажите фамилию*" type="text"
+                    name="Surname" id="Surname" required>
+                </label>
+              </li>
+
+              <li class="">
+                <label class="form__wrapp-fio label-text" for="patronymic">
+                  <span>Отчество:</span>
+                  <input class="form__field label-text label-text--input" placeholder="Отчество, если желаете"
+                    type="text" name="patronymic" id="patronymic">
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset form__bg-color form__bg-color--tel">
+          <div class="form__wrapp-grid">
+            <p class="form__legend form__legend--cont subtitle">Тел</p>
+
+            <label class="form__icon icon icon--phone" for="phone">
+              <span class="visually-hidden">телефон</span>
+              <input class="form__field form__field--cont label-text label-text--input"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="phone" id="phone" required>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset form__bg-color form__bg-color--email">
+          <div class="form__wrapp-grid">
+            <p class="form__legend form__legend--cont subtitle">E-mail</p>
+
+            <label class="form__icon icon icon--email" for="email">
+              <span class="visually-hidden">E-mail</span>
+              <input class="form__field form__field--cont label-text label-text--input" placeholder="Ваш Email*"
+                type="email" name="email" id="email" required>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset -color form__fieldset--dop">
+          <div class="form__wrapp-grid">
+            <p class="form__legend form__legend--dop subtitle">Доп</p>
+
+            <label class="visually-hidden" for="wishes">Пожелания</label>
+            <textarea class="form__textarea label-text label-text--input"
+              placeholder="Опишите все ваши пожелания к заказу" name="wishes" id="wishes" cols="30"
+              rows="10"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form__wrapp-submit">
+          <p class="form__text">*Поля обязательны для заполнения</p>
+          <button class="form__btn btn-text button" type="submit">Отправить заказ</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapp container">
+
+      <a class="main-footer__logo-link" href="#">
+        <img src="./img/logo/logo-footer.svg" alt="логотип Мишка" width="102" height="34">
+      </a>
+
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link icon icon--social icon--vk" href="#">
+            <span class="visually-hidden">ВК</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link icon icon--social icon--youtube " href="#">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link icon icon--social icon--telegramm" href="#">
+            <span class="visually-hidden">telegramm</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="main-footer__dev develop-text">Разработано
+        <a class="main-footer__htmlacademy-logo" href="#">
+          <img class="main-footer__htmlacademy-img" src="./img/logo/logo-htmlacademy.svg" alt="htmlacademy logo"
+            width="27" height="35">
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/map.js"></script>
+</body>
+
+</html>

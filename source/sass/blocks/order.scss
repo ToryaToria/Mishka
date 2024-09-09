@@ -1,0 +1,137 @@
+.order {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 30px;
+  padding-bottom: 51px;
+  border: 1px solid $color-line;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+  }
+
+  @include media-tablet {
+    padding-bottom: 46px;
+  }
+
+  @include media-desktop {
+    grid-template-areas:
+      "video title"
+      "video text"
+      "video buttn";
+
+    grid-template-columns: 683px auto;
+    gap: 0 80px;
+    align-items: start;
+
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.order__title {
+  margin-bottom: 27px;
+
+  margin-left: 34px;
+  margin-right: 13px;
+
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 22px;
+    background-image: url("../../img/stack.svg#icon-video");
+
+    margin-right: 25px;
+
+    @include media-tablet {
+      margin-right: 33px;
+    }
+
+    @include media-desktop {
+      margin-bottom: 27px;
+    }
+  }
+
+  @include media-tablet {
+    text-align: left;
+
+    margin-bottom: 27px;
+    padding-left: 42px;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include media-desktop {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 110px;
+  }
+}
+
+.order__text {
+  padding-left: 34px;
+  padding-right: 10px;
+  padding-bottom: 41px;
+
+
+  @include media-desktop {
+    grid-area: text;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 51px;
+  }
+}
+
+.order__btn {
+  width: 192px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    width: 584px;
+  }
+
+  @include media-desktop {
+    grid-area: buttn;
+    width: 230px;
+    margin: 0;
+  }
+}
+
+.order__video {
+  @include media-tablet {
+    order: -1;
+  }
+
+  @include media-desktop {
+    grid-area: video;
+    margin-bottom: 0;
+  }
+}
+
+.order__img {
+  display: block;
+  width: 260px;
+  height: 150px;
+
+  @include media-tablet {
+    width: 668px;
+    height: 455px;
+    }
+
+  @include media-desktop {
+    width: 683px;
+  }
+}

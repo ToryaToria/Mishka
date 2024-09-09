@@ -1,0 +1,203 @@
+/*===================== шрифты ===========================*/
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+
+  font-display: swap;
+}
+
+.text-base {
+  @include font ($size: 15px, $line-height: 24px, $color: $color-text-base);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);
+  }
+}
+
+.title {
+  /* h1 */
+
+  @include font ($size: 27px, $line-height: 30px, $weight: 600);
+  text-align: center;
+
+  @include media-tablet {
+    @include font ($size: 43px, $line-height: 50px, $weight: 600);
+  }
+
+  @include media-desktop {
+    @include font ($size: 53px, $line-height: 57px, $weight: 600);
+  }
+}
+
+.section-title {
+  /* h2 */
+
+  @include font ($size: 25px, $line-height: 30px, $weight: 600);
+
+  @include media-tablet {
+    @include font ($size: 43px, $line-height: 50px, $weight: 600);
+  }
+
+  @include media-desktop {
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.text-nav {
+  /* ссылки в меню */
+
+  @include font ($size: 17px, $line-height: 24px, $weight: 600);
+
+  text-decoration: none;
+
+  @include media-tablet {
+    @include font ($size: 15px, $line-height: 24px, $weight: 600);
+  }
+
+  @include media-desktop {
+    @include font ($size: 17px, $line-height: 24px, $weight: 600);
+  }
+}
+
+.promo-text {
+  @include font ($size: 19px, $line-height: 24px, $color: $color-white, $weight: 600);
+  text-decoration: none;
+
+  @include media-tablet {
+    @include font ($size: 20px, $line-height: 30px, $color: $color-white, $weight: 600);
+  }
+}
+
+.subtitle {
+  @include font ($size: 17px, $line-height: 16px, $color: $color-text-second, $weight: 600, $upper: uppercase);
+}
+
+.cost-text {
+  @include font ($size: 17px, $line-height: 24px, $color: $color-text-base, $weight: 600);
+
+  @include media-tablet {
+    @include font ($size: 20px, $line-height: 24px, $color: $color-text-base, $weight: 600);
+  }
+}
+
+.btn-text {
+  @include font ($size: 18px, $line-height: 20px, $color: $color-text-base, $weight: 600, $upper: uppercase);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 20px, $color: $color-text-base, $weight: 600, $upper: uppercase);
+  }
+}
+
+.features-text {
+  @include font ($size: 17px, $line-height: 20px, $color: $color-black, $weight: 700);
+
+  @include media-tablet {
+    @include font ($size: 20px, $line-height: 22px, $color: $color-black, $weight: 700);
+  }
+}
+
+.reviews-text {
+  @include font ($size: 15px, $line-height: 30px,  $color: $color-text-base);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);
+  }
+}
+
+.signature-text {
+  @include font ($size: 17px, $line-height: 24px, $weight: 600, $color: $color-black);
+
+  @include media-tablet {
+    @include font ($size: 18px, $line-height: 24px, $weight: 600, $color: $color-black);
+  }
+
+  @include media-desktop {
+    @include font ($size: 17px, $line-height: 24px, $weight: 600, $color: $color-black);
+  }
+}
+
+.signature-text-att {
+  @include font ($size: 17px, $line-height: 30px);
+}
+
+.contact-text {
+  @include font ($size: 14px, $line-height: 30px, $color: $color-text-base);
+
+  font-style: normal;
+  text-decoration: none;
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);
+  }
+}
+
+.develop-text {
+  @include font ($size: 19px, $line-height: 18px, $weight: 600);
+}
+
+.catalog-title {
+  @include font ($size: 17px, $line-height: 24px, $weight: 600);
+
+  @include media-tablet {
+    @include font ($size: 20px, $line-height: 24px, $weight: 600);
+  }
+}
+
+.catalog-text {
+  @include font ($size: 13px, $line-height: 30px, $color: $color-text-base);
+
+  @include media-tablet {
+    @include font ($size: 15px, $line-height: 30px, $color: $color-text-base);
+  }
+}
+
+.catalog-prise {
+  @include font ($size: 15px, $line-height: 24px, $weight: 600);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 24px, $weight: 600);
+  }
+}
+
+.text-form {
+  @include font ($size: 13px, $line-height: 24px, $color: $color-text-base);
+
+  @include media-tablet {
+    @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);
+  }
+}
+
+.label-text {
+  @include font ($size: 17px, $line-height: 18px, $weight: 600);
+
+  &--input {
+    font-weight: 400;
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+
+  @include media-tablet {
+    @include font ($size: 19px, $line-height: 18px, $weight: 600);
+  }
+}
+
+.text-delivery {
+  @include font ($size: 15px, $line-height: 24px, $color: $color-text-base);
+}

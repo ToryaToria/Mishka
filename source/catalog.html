@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mishka-каталог</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ce5ae139-a744-4115-8799-62072c511524&lang=ru_RU"></script>
+</head>
+
+<body class="page__body text-base no-js">
+  <header class="main-header container">
+    <nav class="main-header__nav main-nav">
+      <div class="main-nav__wrapp">
+        <a class="main-header__link" href="./index.html" aria-current="page">
+          <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
+        </a>
+
+        <button class="hamburger hamburger--open" type="button" aria-label="открыть меню">
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </div>
+
+      <div class="main-nav__list-wrapp">
+        <ul class="main-nav__list main-nav__list--nav main-nav__list--nav-second">
+          <li>
+            <a class="main-nav__link text-nav" href="./catalog.html">Каталог товаров</a>
+          </li>
+
+          <li>
+            <a class="main-nav__link text-nav" href="./form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="main-nav__list main-nav__list--user">
+        <li class="main-nav__item">
+          <a class="main-nav__link text-nav icon icon--search" href="#">
+            <span class="main-nav__not">Поиск по сайту</span>
+          </a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link text-nav icon icon--basket" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list--additional">
+        <li>
+          <a class="main-nav__link text-nav" href="#">Новые поступления</a>
+        </li>
+
+        <li>
+          <a class="main-nav__link text-nav" href="#">Распродажа</a>
+        </li>
+      </ul>
+
+      <p class="main-nav__delivery main-nav__delivery--second text-delivery">Бесплатная доставка по России</p>
+    </nav>
+
+    <h1 class="main-header__title title">Вязание на заказ</h1>
+  </header>
+
+  <main class="page__main">
+    <section class="catalog container">
+      <ul class="catalog__list">
+        <li class="card">
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/catalog/photo-1-desktop.webp 1x,
+            ./img/catalog/photo-1-desktop-@2x.webp 2x" width="316" height="462">
+
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/photo-1-tablet.webp 1x,
+            ./img/catalog/photo-1-tablet-@2x.webp 2x" width="334" height="334">
+
+            <source type="image/webp" srcset="./img/catalog/photo-1-mobile.webp 1x,
+            ./img/catalog/photo-1-mobile-@2x.webp 2x" width="260" height="195">
+
+            <source type="image/jpg" media="(min-width:1150px)" srcset="./img/catalog/photo-1-desktop.jpg 1x,
+            ./img/catalog/photo-1-desktop-@2x.jpg 2x" width="316" height="462">
+
+            <source type="image/jpg" media="(min-width:768px)" srcset="./img/catalog/photo-1-tablet.jpg 1x,
+            ./img/catalog/photo-1-tablet-@2x.jpg 2x" width="334" height="334">
+
+            <img class="card__img" src="./img/catalog/photo-1-mobile.jpg"
+              srcset="./img/catalog/photo-1-mobile-@2x.jpg 2x" alt="вязаный заяц" width="260" height="195">
+            </picture>
+
+            <div class="card__wrapp">
+              <h2 class="card__title catalog-title">Зайчик-попрыгайчик</h2>
+              <p class="card__text catalog-text">Рост 30 см, вес 200 г</p>
+
+              <p class="card__prise catalog-prise"> 1 200 руб.
+                <button class="card-btn icon icon--basket" type="button">
+                  <span class="visually-hidden">корзина</span>
+                </button>
+              </p>
+            </div>
+        </li>
+
+        <li class="card">
+
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/catalog/photo-2-desktop.webp 1x,
+            ./img/catalog/photo-2-desktop-@2x.webp 2x" width="316" height="462">
+
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/photo-2-tablet.webp 1x,
+            ./img/catalog/photo-2-tablet-@2x.webp 2x" width="334" height="334">
+
+            <source type="image/webp" srcset="./img/catalog/photo-2-mobile.webp 1x,
+            ./img/catalog/photo-2-mobile-@2x.webp 2x" width="260" height="195">
+
+            <source type="image/jpg" media="(min-width:1150px)" srcset="./img/catalog/photo-2-desktop.jpg 1x,
+            ./img/catalog/photo-2-desktop-@2x.jpg 2x" width="316" height="462">
+
+            <source type="image/jpg" media="(min-width:768px)" srcset="./img/catalog/photo-2-tablet.jpg 1x,
+            ./img/catalog/photo-2-tablet-@2x.jpg 2x" width="334" height="334">
+
+            <img class="card__img" src="./img/catalog/photo-2-mobile.jpg"
+              srcset="./img/catalog/photo-2-mobile-@2x.jpg 2x" alt="Корзинка для белья" width="260" height="195">
+            </picture>
+
+            <div class="card__wrapp">
+              <h2 class="card__title catalog-title">Корзинка для белья</h2>
+              <p class="card__text catalog-text">Диаметр 15 см, высота 10 см</p>
+
+              <p class="card__prise catalog-prise"> 690 руб.
+                <button class="card-btn icon icon--basket" type="button">
+                  <span class="visually-hidden">корзина</span>
+                </button>
+              </p>
+            </div>
+        </li>
+
+        <li class="card">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/catalog/photo-3-desktop.webp 1x,
+          /img/catalog/photo-3-desktop-@2x.webp 2x" width="316" height="462">
+
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/photo-3-tablet.webp 1x,
+          ./img/catalog/photo-3-tablet-@2x.webp 2x" width="334" height="334">
+
+            <source type="image/webp" srcset="./img/catalog/photo-3-mobile.webp 1x,
+          ./img/catalog/photo-3-mobile-@2x.webp 2x" width="260" height="195">
+
+            <source type="image/jpg" media="(min-width:1150px)" srcset="./img/catalog/photo-3-desktop.jpg 1x,
+          ./img/catalog/photo-3-desktop-@2x.jpg 2x" width="316" height="462">
+
+            <source type="image/jpg" media="(min-width:768px)" srcset="./img/catalog/photo-3-tablet.jpg 1x,
+          ./img/catalog/photo-3-tablet-@2x.jpg 2x" width="334" height="334">
+
+            <img class="card__img" src="./img/catalog/photo-3-mobile.jpg"
+              srcset="./img/catalog/photo-3-mobile-@2x.jpg 2x" alt="Большая корзинка для игрушек" width="260"
+              height="195">
+            </picture>
+
+            <div class="card__wrapp">
+              <h2 class="card__title catalog-title">Большая корзинка для игрушек</h2>
+              <p class="card__text catalog-text">Диаметр 30 см, высота 30 см</p>
+
+              <p class="card__prise catalog-prise"> 1 500 руб
+                <button class="card-btn icon icon--basket" type="button">
+                  <span class="visually-hidden">корзина</span>
+                </button>
+              </p>
+            </div>
+        </li>
+      </ul>
+
+      <article class="order">
+        <h2 class="order__title catalog-title">Процесс производства</h2>
+
+        <div class="order__video video">
+          <!-- VIDEO (пока не знаю как вставить) -->
+<span class="video__play">
+  <span class="visually-hidden">кнопка пуск</span>
+</span>
+          <picture class="order__img">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/catalog/video-desktop.webp 1x,
+            ./img/catalog/video-desktop-@2x.webp 2x" width="683" height="455">
+
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/video-tablet.webp 1x,
+            ./img/catalog/video-tablet-@2x.webp 2x" width="668" height="455">
+
+            <source type="image/webp" srcset="./img/catalog/video-mobile.webp 1x,
+            ./img/catalog/video-mobile-@2x.webp 2x" width="260" height="150">
+
+            <source type="image/jpg" media="(min-width:1150px)" srcset="./img/catalog/video-desktop.jpg 1x,
+            ./img/catalog/video-desktop-@2x.webp 2x" width="683" height="455">
+
+            <source type="image/jpg" media="(min-width:768px)" srcset="./img/catalog/video-tablet.jpg 1x,
+            ./img/catalog/video-tablet-@2x.jpg 2x" width="668" height="455"">
+
+            <img class="order__img-" src="./img/catalog/video-mobile.jpg"
+              srcset="./img/catalog/video-mobile-@2x.jpg 2x" alt="video" width="260" height="150">
+            </picture>
+        </div>
+
+        <p class="order__text catalog-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как
+          появляются наши товары.</p>
+
+        <button class="order__btn btn-text button" type="button">Сделать заказ</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapp container">
+
+      <a class="main-footer__logo-link" href="#">
+        <img src="./img/logo/logo-footer.svg" alt="логотип Мишка" width="102" height="34">
+      </a>
+
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link icon icon--social icon--vk" href="#">
+            <span class="visually-hidden">ВК</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link icon icon--social icon--youtube " href="#">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link icon icon--social icon--telegramm" href="#">
+            <span class="visually-hidden">telegramm</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="main-footer__dev develop-text">Разработано
+        <a class="main-footer__htmlacademy-logo" href="#">
+          <img class="main-footer__htmlacademy-img" src="./img/logo/logo-htmlacademy.svg" alt="htmlacademy logo"
+            width="27" height="35">
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/map.js"></script>
+</body>
+
+</html>

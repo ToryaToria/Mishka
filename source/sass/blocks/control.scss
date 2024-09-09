@@ -1,0 +1,89 @@
+.control {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  // width: fit-content;
+  cursor: pointer;
+
+  // @include media-tablet {
+  //   gap: 19px;
+  // }
+}
+
+.control__mark {
+  position: relative;
+  display: block;
+
+  flex-shrink: 0;
+
+  background-color: $color-white;
+  border: 2px solid $color-text-base;
+}
+
+.control__mark--radio {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.control__mark--check {
+  width: 38px;
+  height: 38px;
+}
+
+.control__input[type="radio"]:checked + .control__mark--radio::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-color: $color-form-dop;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  // @include media-tablet {
+  //   width: 18px;
+  //   height: 18px;
+  // }
+}
+
+.control__input[type="checkbox"]:checked + .control__mark--check::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 16px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: url("../../img/stack.svg#icon-tick");
+  background-position: center;
+  background-size: 23px 16px;
+  background-repeat: no-repeat;
+}
+
+.control__input:disabled + .control__mark--radio,
+.control__input:disabled + .control__mark--check,
+.control__input:disabled ~ .control__label {
+  opacity: 0.3;
+}
+
+.control__input:not(:disabled):hover + .control__mark--radio,
+.control__input:not(:disabled):hover + .control__mark--check {
+  border-color: $color-line-link;
+}
+
+.control__input:not(:disabled):active + .control__mark--radio,
+.control__input:not(:disabled):active + .control__mark--check {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.control__input:not(:disabled):focus + .control__mark--radio,
+.control__input:not(:disabled):focus + .control__mark--check {
+  outline: auto;
+}

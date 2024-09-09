@@ -1,0 +1,266 @@
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
+
+  &--dop {
+    margin-bottom: 17px;
+  }
+
+  @include media-tablet {
+    margin-bottom: 50px;
+  }
+
+  @include media-desktop {
+    padding-left: 46px;
+  }
+}
+
+.form__bg-color {
+  @include media-tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $color-line-wavy;
+    margin-left: -50px;
+    padding-left: 50px;
+    margin-right: -50px;
+    padding-right: 50px;
+  }
+
+  @include media-desktop {
+    padding-left: 96px;
+  }
+}
+
+.form__bg-color--tel {
+  @include media-tablet {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.form__bg-color--email {
+  @include media-tablet {
+    padding-top: 24px;
+  }
+}
+
+.form__legend {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  // background-color: #00ff00;
+
+  &--cont {
+    margin-bottom: 5px;
+  }
+
+  @include media-tablet {
+    width: fit-content;
+    grid-area: label;
+    margin-bottom: auto;
+    margin-top: 16px;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $color-line-link;
+  }
+}
+
+.form__wrapp-grid {
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 167px 1fr;
+    grid-template-areas: "label ul";
+    grid-template-rows: max-content;
+  }
+
+  @include media-desktop {
+    grid-template-columns: 130px 1fr;
+    padding-right: 173px;
+  }
+}
+
+.form__list-type {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
+  // background-color: #00ffff;
+  // grid-area: ul;
+}
+
+.form__list-color {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 23px;
+
+  @include media-tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 23px;
+  }
+
+  @include media-desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.form__list-fio {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @include media-tablet {
+    grid-area: ul;
+    // background-color: #7fffd4;
+    gap: 24px;
+  }
+}
+
+.form__wrapp-fio {
+  @include media-tablet {
+    display: flex;
+    // background-color: #8b008b;
+    gap: 24px;
+    align-items: center;
+  }
+}
+
+.form__field {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: block;
+  border: none;
+  padding: 17px 10px 17px 0;
+
+  border-bottom: 2px solid $color-text-base;
+
+  outline: 1px solid #ee82ee;
+
+	appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &:not(:disabled):hover {
+    border-color: $color-line-link;
+  }
+
+  &:not(:disabled):focus {
+    // outline: none;
+    outline: 2px solid $color-line-link;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: $color-error;
+    outline: 2px solid $color-error;
+  }
+}
+
+.form__field--cont {
+    padding: 16px 40px 20px 0;
+
+  outline: 1px solid #82c3ee;
+
+  @include media-tablet {
+    // grid-area: ul;
+
+    background-color: transparent;
+  }
+}
+
+.form__icon {
+  position: relative;
+}
+
+.form__icon::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+
+  // @include media-tablet {
+  //   right: 14px;
+  // }
+
+  // @include media-desktop {
+  //   right: 16px;
+  // }
+}
+
+.icon--email:has(.form__field:not(:disabled):focus)::after,
+.icon--phone:has(.form__field:not(:disabled):focus)::after {  //цвет менялся
+  background-color:$color-line-link;
+}
+
+.icon--email:has(.form__field:not(:placeholder-shown):invalid)::after,
+.icon--phone:has(.form__field:not(:placeholder-shown):invalid)::after {
+  background-color:$color-error;
+}
+
+
+.form__textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 2px solid $color-text-base;
+  opacity: 1;
+  padding: 17px;
+
+  @include media-tablet {
+    grid-area: ul;
+    // background-color: #008b8b;
+  }
+}
+
+.form__textarea:not(:disabled):hover {
+  border-color: #62d1ba;
+}
+
+.form__wrapp-submit {
+  @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include media-desktop {
+    padding-right: 173px;
+    padding-left: 174px;
+  }
+}
+
+.form__text {
+  @include media-tablet {
+    order: 1;
+  }
+}
+
+.form__btn {
+  width: 260px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    width: 230px;
+    margin: 0;
+  }
+}

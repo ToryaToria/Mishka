@@ -1,0 +1,14 @@
+.social {
+  @include list-reset;
+  border-bottom: 1px solid $color-line-footer;
+  padding-top: 25px;
+  padding-bottom: 28px;
+
+  width: fit-content;
+  display: flex;
+  gap: 29px;
+
+  @include media-tablet {
+    border-bottom: none;
+  }
+}

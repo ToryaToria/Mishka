@@ -1,0 +1,67 @@
+.promo-link {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: -30px;
+  margin-right: -30px;
+
+  @include media-tablet {
+    flex-direction: row;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
+
+.promo-link__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 30px 18px 36px;
+
+  transition: transform .3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    &::after {   // ПОЧЕМУ НЕ РАБОТАЕТ?
+      opacity: 0.3;
+      }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: opacity .3s ease-in-out;
+
+  }
+
+  @include media-tablet {
+    padding: 25px 36px 34px 36px;
+    flex-grow: 1;
+  }
+}
+
+.promo-link__card--light {
+  background-color: $color-bg-1;
+
+  &::after {
+    width: 40px;
+    height: 62px;
+    background-size: 40px 61px;
+    background-image: url("../../img/stack.svg#icon-lamp");
+  }
+}
+
+.promo-link__card--dark {
+  background-color: $color-bg-2;
+
+  &::after {
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+    background-image: url("../../img/stack.svg#icon-lego");
+  }
+}

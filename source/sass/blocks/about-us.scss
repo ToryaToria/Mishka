@@ -1,0 +1,21 @@
+.about-us {
+  padding-top: 31px;
+  padding-bottom: 38px;
+
+  @include media-tablet {
+    padding-top: 56px;
+    padding-bottom: 83px;
+  }
+
+  @include media-desktop {
+    padding-left: 175px;
+  }
+}
+
+.about-us__title {
+  margin-bottom: 28px;
+
+  @include media-tablet {
+    margin-bottom: 42px;
+  }
+}

@@ -1,0 +1,245 @@
+.icon {
+  overflow: visible;
+
+  @include icon;
+
+  &::before {
+    content: "";
+
+    @include icon;
+  }
+
+  &::after {
+    content: "";
+
+    @include icon;
+  }
+}
+
+.icon--n::before {
+  margin-left: -6px;
+  margin-bottom: 18px;
+
+  width: 55px;
+  height: 38px;
+
+  // outline: auto;
+}
+
+.icon--n-1::before {
+  // width: 33px;
+  // height: 38px;
+  background-size: 33px 38px;
+  background-image: url("../../img/stack.svg#icon-eco");
+}
+
+.icon--n-2::before {
+  // width: 47px;
+  // height: 27px;
+  background-size: 47px 27px;
+  background-image: url("../../img/stack.svg#icon-kover");
+}
+
+.icon--n-3::before {
+  // width: 34px;
+  // height: 27px;
+  background-size: 34px 27px;
+  background-image: url("../../img/stack.svg#icon-heart");
+}
+
+.icon--n-4::before {
+  // width: 35px;
+  // height: 34px;
+  background-size: 35px 34px;
+  background-image: url("../../img/stack.svg#icon-klubok");
+}
+
+.icon--n-5::before {
+  // width: 55px;
+  // height: 23px;
+  background-size: 55px 23px;
+  background-image: url("../../img/stack.svg#icon-raceta");
+}
+
+.icon--n-6::before {
+  // width: 33px;
+  // height: 32px;
+  background-size: 33px 32px;
+  background-image: url("../../img/stack.svg#icon-present");
+}
+
+.icon--bg-zigzag::after {
+  box-sizing: border-box;
+  width: auto;
+  height: 6px;
+  // background-image: url("../../img/stack.svg#zigzag-line-desktop");
+  background-image: url("../../img/icons/zigzag-line-desktop.svg");
+  background-repeat: repeat no-repeat;
+  background-size: auto 6px;
+
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-top: 105px;
+
+  @include media-tablet {
+    height: 17px;
+
+    margin-left: -50px;
+    margin-right: -50px;
+
+    background-size: auto 17px;
+  }
+
+  @include media-desktop {
+    height: 23px;
+
+    margin-right: 0;
+    margin-left: -175px;
+    margin-top: 150px;
+
+
+    background-size: auto 23px;
+  }
+}
+
+.icon--arr::after {
+  margin-left: 0;
+  margin-bottom: 0;
+
+  width: 50px;
+  height: 26px;
+
+  background-image: url("../../img/stack.svg#icon-arrow-right");
+}
+
+.icon--arr-left {
+  border-left: 0;
+}
+
+.icon--arr-left::after {
+  transform: rotate(180deg);
+}
+
+.icon--social {
+  display: block;
+  width: 28px;
+  height: 22px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+
+    background-color: $color-sotial;
+
+    mask-repeat: no-repeat;
+    mask-size: 28px 22px;
+    mask-position: center;
+  }
+
+  &:hover::before {
+    background-color: $color-link-hover;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.icon--vk::before {
+  mask-image: url("../../img/stack.svg#icon-vkontakte");
+}
+
+.icon--youtube::before {
+  mask-image: url("../../img/stack.svg#icon-youtube");
+}
+
+.icon--telegramm::before {
+  mask-image: url("../../img/stack.svg#icon-telegram");
+}
+
+.icon--search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon--search::before {
+  padding: 0 26px 0 2px;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  mask-repeat: no-repeat;
+  mask-size: 18px 18px;
+  mask-position: center;
+  mask-image: url("../../img/stack.svg#icon-search");
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+   @include media-tablet {
+    padding: 15px 33px 14px 34px;
+  }
+}
+
+.icon--basket::before {
+  display: inline-block;
+  padding: 0 25px 0 0;
+
+  width: 20px;
+  height: 19px;
+  mask-repeat: no-repeat;
+  mask-size: 20px 19px;
+  mask-position: center;
+  mask-image: url("../../img/stack.svg#icon-cart");
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.icon--flag::after {
+  @include media-tablet {
+    width: 47px;
+    height: 81px;
+
+    background-image: url("../../img/stack.svg#icon-flag");
+  }
+
+  @include media-desktop {
+    position: absolute;
+    top: 0;
+    left: -100px;
+  }
+}
+
+.icon--flag::before {
+  display: none;
+}
+
+.icon--email::before,
+.icon--phone::before {
+  content: none;
+}
+
+.icon--email::after,
+.icon--phone::after {
+  display: inline-block;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $color-black;
+}
+
+.icon--email::after {
+  width: 25px;
+  height: 24px;
+  mask-size: 25px 24px;
+  mask-image: url("../../img/stack.svg#icon-mail");
+}
+
+.icon--phone::after {
+  width: 32px;
+  height: 21px;
+  mask-size: 32px 21px;
+  mask-image: url("../../img/stack.svg#icon-phone");
+}

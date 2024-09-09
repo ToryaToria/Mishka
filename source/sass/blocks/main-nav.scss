@@ -1,0 +1,229 @@
+.main-nav {
+  box-sizing: border-box;
+  position: relative;
+
+  @include media-tablet {
+    position: static;
+
+    display: grid;
+    grid-template-areas: "logo list-user"
+      "list-nav delivery";
+  }
+
+  @include media-desktop {
+    grid-template-areas: "list-nav logo list-user"
+      "list-add delivery delivery";
+  }
+}
+
+.main-nav__wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22px;
+
+  // background-color: #ffc0cb;
+
+  @include media-tablet {
+    grid-area: logo;
+    // outline: 1px solid #ff0000;
+    padding-top: 22px;
+    padding-bottom: 20px;
+
+    // padding-left: 50px;
+    // margin-left: -50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  @include media-desktop {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-nav__list {
+  box-sizing: border-box;
+  background-color: $color-white;
+
+  width: auto;
+
+  @include list-reset;
+
+  margin-left: -30px;
+  margin-right: -30px;
+  // padding-left: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+
+  @include media-tablet {
+    margin-left: 0;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+
+.main-nav__list-wrapp {
+  //  background-color: aquamarine;
+
+  @include media-tablet {
+    grid-area: list-nav;
+    min-width: 320px;
+  }
+}
+
+.main-nav__list--nav {
+  // background-color: greenyellow;
+  // margin-left: -50px;
+  // padding-left: 50px;
+
+  @include media-tablet {
+    min-width: 320px;
+    gap: 36px;
+
+    margin-left: -50px;
+    padding-left: 50px;
+
+    background-color: $color-bg-hero;
+
+
+    &--second {
+      background-color: $color-bg-base;
+    }
+  }
+
+  @include media-desktop {
+    background-color: $color-white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.main-nav__list--user {
+  // background-color: #ffa500;
+  // margin-left: -50px;
+  // padding-left: 50px;
+
+  @include media-tablet {
+    min-width: 347px;
+    justify-content: end;
+    grid-area: list-user;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    padding-right: 50px;
+    margin-right: -50px;
+  }
+}
+
+.main-nav__link {
+  box-sizing: border-box;
+  display: block;
+  // text-align: center;
+
+  padding: 28px 0 27px;
+  padding-left: 30px;
+
+  border-top: 1px solid $color-line;
+
+  transition: opacity .3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include media-tablet {
+    border-top: none;
+    padding: 21px 0 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+.main-nav__link:hover::before
+// ,
+// .main-nav__link:hover .icon--basket::before  // ПОЧЕМУ ЭТО НЕ РАБОТАЕТ?
+{
+  background-color: $color-text-second;
+}
+
+.main-nav__link--noicons {
+  padding-left: 75px;
+
+  @include media-tablet {
+    margin-left: 0;
+    padding-top: 32px;
+    padding-bottom: 33px;
+  }
+}
+
+.main-nav__not {
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+.main-nav__list--additional {
+  // background-color: rgb(124, 7, 124);
+
+  @media (max-width: 1149px) {
+    display: none;
+  }
+
+  @include media-desktop {
+    display: flex;
+    grid-area: list-add;
+    gap: 45px;
+
+    margin-left: -50px;
+    padding-left: 50px;
+
+    background-color: $color-bg-hero;
+  }
+}
+
+.main-nav__delivery {
+  margin: 0;
+  display: none;
+
+  @include media-tablet {
+    display: block;
+    min-width: 347px;
+
+    align-self: center;
+    padding: 21px 0 20px;
+    text-align: right;
+
+    padding-right: 50px;
+    margin-right: -50px;
+
+    grid-area: delivery;
+    background-color: $color-bg-hero;
+    // background-color: #5e5ed4;
+
+    &--second {
+      background-color: $color-bg-base;
+    }
+  }
+}
+
+.main-nav__item {
+  @include media-tablet {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}

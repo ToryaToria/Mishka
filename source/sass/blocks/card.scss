@@ -1,0 +1,116 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  border: 1px solid $color-line;
+  padding-bottom: 27px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+    .card__prise {
+      opacity: 0.6;
+    }
+
+    .icon--basket::before {
+    background-color:$color-bg-1;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+
+    .card__prise {
+      opacity: 0.3;
+    }
+
+    .icon--basket::before {
+    background-color:$color-bg-1;
+    }
+  }
+
+  @include media-tablet {
+    min-height: 100%;
+    flex-direction: row;
+    gap: 0;
+    padding-bottom: 0;
+    align-items: stretch;
+  }
+
+  @include media-desktop {
+    width: 314px;
+    flex-direction: column;
+  }
+}
+
+
+.card__img {
+  display: block;
+  width: 260px;
+  height: 195px;
+
+  @include media-tablet {
+    width: 334px;
+    height: 334px;
+  }
+
+  @include media-desktop {
+    width: 314px;
+    height: 462px;
+  }
+}
+
+.card__wrapp {
+  padding-left: 28px;
+  padding-right: 28px;
+
+  @include media-tablet {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 34px;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+
+  @include media-desktop {
+    align-items: stretch;
+  }
+}
+
+.card__title {
+  margin-bottom: 6px;
+
+  @include media-tablet {
+    flex-grow: 1;
+  }
+
+  @include media-desktop {
+    flex-grow: 0;
+  }
+}
+
+.card__text {
+  padding-bottom: 18px;
+  border-bottom: 1px solid $color-bg-base;
+
+  @include media-desktop {
+    flex-grow: 1;
+  }
+}
+
+.card__prise {
+  padding-top: 23px;
+
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.card-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

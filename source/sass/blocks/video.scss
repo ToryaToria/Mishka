@@ -1,0 +1,20 @@
+.video {
+  box-sizing: border-box;
+  width: 260px;
+  height: 150px;
+
+  margin-bottom: 35px;
+
+  @include media-tablet {
+    width: 668px;
+    height: 455px;
+  }
+
+  @include media-desktop {
+    width: 683px;
+  }
+}
+
+// .video__play {
+
+// }
