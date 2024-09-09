@@ -130,7 +130,7 @@
 
   border-top: 1px solid $color-line;
 
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 
   &:hover {
     opacity: 0.6;
@@ -147,10 +147,8 @@
     align-items: center;
   }
 }
-.main-nav__link:hover::before
-// ,
-// .main-nav__link:hover .icon--basket::before  // ПОЧЕМУ ЭТО НЕ РАБОТАЕТ?
-{
+
+.main-nav__link:hover::before {
   background-color: $color-text-second;
 }
 
@@ -165,18 +163,10 @@
 }
 
 .main-nav__not {
-
   @include media-tablet {
     display: none;
   }
 }
-
-
-
-
-
-
-
 
 .main-nav__list--additional {
   // background-color: rgb(124, 7, 124);

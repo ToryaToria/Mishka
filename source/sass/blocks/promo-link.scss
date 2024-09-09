@@ -18,14 +18,15 @@
   align-items: center;
   padding: 23px 30px 18px 36px;
 
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 
   &:hover {
     transform: translateY(-5px);
 
-    &::after {   // ПОЧЕМУ НЕ РАБОТАЕТ?
+    &::after {
+      // ПОЧЕМУ НЕ РАБОТАЕТ?
       opacity: 0.3;
-      }
+    }
   }
 
   &::after {
@@ -34,8 +35,7 @@
 
     background-repeat: no-repeat;
     background-position: right;
-    transition: opacity .3s ease-in-out;
-
+    transition: opacity 0.3s ease-in-out;
   }
 
   @include media-tablet {

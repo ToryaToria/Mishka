@@ -149,8 +149,7 @@
   border-bottom: 2px solid $color-text-base;
 
   outline: 1px solid #ee82ee;
-
-	appearance: textfield;
+  appearance: textfield;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -177,7 +176,7 @@
 }
 
 .form__field--cont {
-    padding: 16px 40px 20px 0;
+  padding: 16px 40px 20px 0;
 
   outline: 1px solid #82c3ee;
 
@@ -208,13 +207,14 @@
 }
 
 .icon--email:has(.form__field:not(:disabled):focus)::after,
-.icon--phone:has(.form__field:not(:disabled):focus)::after {  //цвет менялся
-  background-color:$color-line-link;
+.icon--phone:has(.form__field:not(:disabled):focus)::after {
+  //цвет менялся
+  background-color: $color-line-link;
 }
 
 .icon--email:has(.form__field:not(:placeholder-shown):invalid)::after,
 .icon--phone:has(.form__field:not(:placeholder-shown):invalid)::after {
-  background-color:$color-error;
+  background-color: $color-error;
 }
 
 

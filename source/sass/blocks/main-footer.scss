@@ -11,7 +11,7 @@
 
 .main-footer__logo-link {
   display: none;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 
 
   &:hover .main-footer__logo-img {
@@ -56,17 +56,16 @@
 }
 
 .main-footer__htmlacademy-img {
-display: block;
-width: 27px;
-height: 35px;
-fill: $color-bg-1;
+  display: block;
+  width: 27px;
+  height: 35px;
+  fill: $color-bg-1;
 }
 
 .main-footer__htmlacademy-logo:hover .main-footer__htmlacademy-img {
-fill: $color-link-hover;
+  fill: $color-link-hover;
 }
 
 .main-footer__htmlacademy-logo:active .main-footer__htmlacademy-img {
-opacity: 0.3;
-  }
-
+  opacity: 0.3;
+}
