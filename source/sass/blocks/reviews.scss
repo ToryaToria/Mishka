@@ -10,15 +10,15 @@
     padding-top: 79px;
     // padding-bottom: 68px;
     margin-bottom: 46px;
-    background-image: url("../../img/index-img/bg-index.jpg");
+    // background-image: url("../../img/index-img/bg-index.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
     background-position: top left;
 
-    background-image: image-set(url(../../img/index-img/bg-index.webp)1x type("image/webp"),
-    url(../../img/index-img/bg-index.jpg)1x,
-    url(../../img/index-img/bg-index-@2x.webp)2x type("image/webp"),
-    url(../../img/hero/bg-index-@2x.jpg)2x);
+    background-image: image-set(url("../../img/index-img/bg-index.webp") 1x type("image/webp"),
+    url("../../img/index-img/bg-index.jpg") 1x,
+    url("../../img/index-img/bg-index-@2x.webp") 2x type("image/webp"),
+    url("../../img/hero/bg-index-@2x.jpg") 2x);
   }
 
   @include media-desktop {

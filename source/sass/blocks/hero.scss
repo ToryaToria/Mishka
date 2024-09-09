@@ -3,17 +3,17 @@
   padding-top: 73px;
   padding-bottom: 10px;
 
-  background-image: url("../../img/index-img/hero-mobil.jpg");
+  // background-image: url("../../img/index-img/hero-mobil.jpg");
 
   background-color: $color-bg-hero;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 
-  background-image: image-set(url(../../img/index-img/hero-mobil.webp)1x type("image/webp"),
-  url(../../img/index-img/hero-mobil.jpg)1x,
-  url(../../img/index-img/hero-mobil-@2x.webp)2x type("image/webp"),
-  url(../../img/hero/hero-bg-desktop-@2x.jpg)2x);
+  background-image: image-set(url("../../img/index-img/hero-mobil.webp") 1x type("image/webp"),
+  url("../../img/index-img/hero-mobil.jpg") 1x,
+  url("../../img/index-img/hero-mobil-@2x.webp") 2x type("image/webp"),
+  url("../../img/hero/hero-bg-desktop-@2x.jpg") 2x);
 
   margin-left: -30px;
   margin-right: -30px;
@@ -24,17 +24,17 @@
     height: 560px;
     padding-top: 87px;
 
-    background-image: url("../../img/index-img/hero-desktop.jpg");
+    // background-image: url("../../img/index-img/hero-desktop.jpg");
 
     margin-left: -50px;
     margin-right: -50px;
     padding-left: 50px;
     padding-right: 50px;
 
-    background-image: image-set(url(../../img/index-img/hero-desktop.webp)1x type("image/webp")
-    ,url(../../img/index-img/hero-desktop.jpg)1x,
-    url(../../img/index-img/hero-desktop-@2x.webp)2x type("image/webp"),
-    url(../../img/index-img/hero-desktop-@2x.jpg)2x);
+    background-image: image-set(url("../../img/index-img/hero-desktop.webp") 1x type("image/webp"),
+    url("../../img/index-img/hero-desktop.jpg") 1x,
+    url("../../img/index-img/hero-desktop-@2x.webp") 2x type("image/webp"),
+    url("../../img/index-img/hero-desktop-@2x.jpg") 2x);
   }
 
   @include media-desktop {
