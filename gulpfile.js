@@ -201,7 +201,8 @@ export function copy() {
     return gulp.src(['source/fonts/**/*.{woff2,woff}',
         'source/favicon.ico',
         'source/img/favicons/**',
-        'source/manifest.webmanifest'
+        'source/manifest.webmanifest',
+        'source/video/**'
     ], {
         base: 'source'
     }

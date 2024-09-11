@@ -187,14 +187,27 @@
       <article class="order">
         <h2 class="order__title catalog-title">Процесс производства</h2>
 
-        <div class="order__video video">
-          <!-- VIDEO (пока не знаю как вставить) -->
-          <div class="video__play-wrapp">
-            <button class="video__play" type="button">
+        <div class="order__video ">
+          <video class="video" controls width="260" height="150"
+            poster="./img/catalog/video-mobile.jpg">
+            <source src="./video/rabbit320.webm" type="video/webm">
+            <source src="./video/rabbit320.mp4" type="video/mp4">
+            <source src="./video/rabbit320.ogv" type="video/ogg">
+            <source src="./video/rabbit320.avi" type="video/avi">
+            <p> Простите, но ваш браузер не поддерживает встроенные видео.
+              Попробуйте скачать видео <a href="./video/rabbit320.webm">по этой ссылке</a>
+              и открыть его на своём устройстве.
+            </p>
+          </video>
+
+
+          <!-- <div class="video__play-wrapp"> -->
+            <!-- <button class="video__play" type="button">
               <span class="visually-hidden">кнопка пуск</span>
-            </button>
-          </div>
-          <picture class="order__img">
+            </button> -->
+          <!-- </div> -->
+
+          <!-- <picture class="order__img">
             <source type="image/webp" media="(min-width: 1150px)" srcset="./img/catalog/video-desktop.webp 1x,
             ./img/catalog/video-desktop-@2x.webp 2x" width="683" height="455">
 
@@ -212,7 +225,7 @@
 
             <img class=" order__img-" src="./img/catalog/video-mobile.jpg"
               srcset="./img/catalog/video-mobile-@2x.jpg 2x" alt="video" width="260" height="150">
-          </picture>
+          </picture> -->
         </div>
 
         <p class="order__text catalog-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
