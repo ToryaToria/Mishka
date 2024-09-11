@@ -30,3 +30,15 @@
     margin-bottom: 57px;
   }
 }
+
+.catalog__img-link {
+display: block;
+}
+
+.catalog__img-wrapp {
+overflow: hidden;
+}
+
+.catalog__img-link:hover .card__img {
+	transform: scale(1.2);
+}

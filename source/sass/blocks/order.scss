@@ -111,6 +111,8 @@
 }
 
 .order__video {
+  position: relative;
+
   @include media-tablet {
     order: -1;
   }

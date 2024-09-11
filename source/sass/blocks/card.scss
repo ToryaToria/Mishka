@@ -51,13 +51,15 @@
   width: 260px;
   height: 195px;
 
+  transition: scale 0.3s ease-in-out;
+
   @include media-tablet {
     width: 334px;
     height: 334px;
   }
 
   @include media-desktop {
-    width: 314px;
+    width: 315px;
     height: 462px;
   }
 }

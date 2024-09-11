@@ -71,9 +71,9 @@ export function cssMinif() {
 export function jsMinif() {
     return gulp.src('source/js/*.js')
         .pipe(terser())
-        .pipe(rename({
-            suffix: '-min'
-        }))
+        // .pipe(rename({
+        //     suffix: '-min'
+        // }))
         .pipe(gulp.dest('build/js'))
         .pipe(browser.stream())
 }
