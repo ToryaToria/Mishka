@@ -52,14 +52,14 @@ export function htmlMinif() {
 
 export function cssMinif() {
     return gulp.src('source/css/*.css', { sourcemaps: true })
-        // .pipe(plumber())
-        .pipe(gcssmq()) // группирует вместе все медиавыражения и размещает их в конце файла;
+        .pipe(plumber())
+        // .pipe(gcssmq()) // группирует вместе все медиавыражения и размещает их в конце файла;
         .pipe(postcss([
             postUrl({
               assetsPath: '../'
             }),
             autoprefixer(), //добавляет вендорные префиксы CSS
-            csso()
+            // csso()
         ]))
 
         .pipe(gulp.dest('build/css', { sourcemaps: '.' }))  //сохраняет итоговый файл в папку /build/css/

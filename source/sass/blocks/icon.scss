@@ -109,6 +109,7 @@
 
     margin-left: -50px;
     margin-right: -50px;
+    margin-top: 52px;
 
     background-size: auto 17px;
   }
@@ -202,7 +203,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 
   @include media-tablet {
-    padding: 15px 33px 14px 34px;
+    // padding: 15px 33px 14px 34px;
   }
 }
 
@@ -218,6 +219,11 @@
   mask-image: url("../../img/stack.svg#icon-cart");
 
   background-color: rgba(0, 0, 0, 0.8);
+
+  @include media-tablet {
+    padding: 0 31px 0 31px;
+
+  }
 }
 
 .icon--flag::after {
