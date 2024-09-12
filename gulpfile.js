@@ -52,7 +52,7 @@ export function htmlMinif() {
 
 export function cssMinif() {
     return gulp.src('source/css/*.css', { sourcemaps: true })
-        .pipe(plumber())
+        // .pipe(plumber())
         .pipe(gcssmq()) // группирует вместе все медиавыражения и размещает их в конце файла;
         .pipe(postcss([
             postUrl({

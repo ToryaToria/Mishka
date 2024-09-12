@@ -42,7 +42,9 @@
 
 .main-header__link {
   display: block;
-  margin: 0 auto;
+  // margin: 0 auto;
+
+  margin-left: 86px;
   width: fit-content;
 
   transition: opacity 0.3s ease-in-out;

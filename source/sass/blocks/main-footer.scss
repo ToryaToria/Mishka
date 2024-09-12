@@ -38,8 +38,9 @@
   gap: 27px;
   align-items: center;
   width: fit-content;
-  padding-top: 30px;
-  padding-bottom: 32px;
+
+  padding-top: 20px;
+  padding-bottom: 25px;
   margin: 0 auto;
 
   @include media-tablet {
@@ -48,6 +49,8 @@
 }
 
 .main-footer__social {
+
+  width: 142px;
   margin: 0 auto;
 
   @include media-tablet {

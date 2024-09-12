@@ -1,4 +1,5 @@
 .hero {
+  box-sizing: border-box;
   height: 283px;
   padding-top: 73px;
   padding-bottom: 10px;
@@ -8,7 +9,7 @@
   background-color: $color-bg-hero;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 260px 283px;
 
   background-image: image-set(url("../../img/index-img/hero-mobil.webp") 1x type("image/webp"),
   url("../../img/index-img/hero-mobil.jpg") 1x,
