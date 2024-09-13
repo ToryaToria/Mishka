@@ -74,7 +74,7 @@
   }
 
   &--additional {
-  font-size: 15px;
+    font-size: 15px;
   }
 }
 
@@ -116,7 +116,7 @@
 }
 
 .reviews-text {
-  @include font ($size: 15px, $line-height: 30px,  $color: $color-text-base);
+  @include font ($size: 15px, $line-height: 30px, $color: $color-text-base);
 
   @include media-tablet {
     @include font ($size: 17px, $line-height: 30px, $color: $color-text-base);

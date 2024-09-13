@@ -28,7 +28,6 @@
 
   @include media-desktop {
     gap: 0 58px;
-
   }
 }
 
@@ -54,7 +53,6 @@
 
   @include media-desktop {
     margin-bottom: 0;
-
   }
 }
 
@@ -164,7 +162,7 @@
   }
 
   @include media-desktop {
-  margin-left: 175px;
+    margin-left: 175px;
   }
 }
 
@@ -177,6 +175,5 @@
   @include media-desktop {
     margin-left: 175px;
     width: auto;
-
-    }
+  }
 }

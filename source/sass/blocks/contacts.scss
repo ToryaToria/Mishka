@@ -6,6 +6,7 @@
   }
 
   @include media-desktop {
+    padding-bottom: 104px;
     padding-left: 50px;
     padding-right: 50px;
     display: grid;
@@ -66,7 +67,7 @@
 
   @include media-desktop {
     flex-direction: column;
-    margin-bottom: 28px;
+    margin-bottom: 83px;
     gap: 30px;
   }
 }
@@ -129,8 +130,7 @@
 
   @include media-desktop {
     grid-area: map;
-    margin-bottom: 107px;
-
+    margin-bottom: 0;
   }
 }
 
