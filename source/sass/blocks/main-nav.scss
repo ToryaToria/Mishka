@@ -166,21 +166,18 @@
 }
 
 .main-nav__link--search {
-
   @include media-tablet {
     padding: 36px 17px 30px 19px;
   }
 }
 
 .main-nav__link--basket {
-
   @include media-tablet {
     padding: 32px 0 31px 0;
     font-size: 17px;
     text-align: right;
   }
 }
-
 
 .main-nav__not {
   @include media-tablet {

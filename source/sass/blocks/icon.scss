@@ -222,13 +222,12 @@
 
   @include media-tablet {
     padding: 0 31px 0 31px;
-
   }
 }
 
 .icon--flag::after {
   @include media-tablet {
-    width: 47px;
+    width: 53px;
     height: 81px;
 
     background-image: url("../../img/stack.svg#icon-flag");
