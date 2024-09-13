@@ -72,6 +72,10 @@
   @include media-desktop {
     @include font ($size: 17px, $line-height: 24px, $weight: 600);
   }
+
+  &--additional {
+  font-size: 15px;
+  }
 }
 
 .promo-text {

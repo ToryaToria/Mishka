@@ -5,6 +5,11 @@
     grid-area: txt;
     margin-bottom: 61px;
   }
+
+  @include media-desktop {
+    margin-bottom: 44px;
+
+  }
 }
 
 .feedback-card__sign {

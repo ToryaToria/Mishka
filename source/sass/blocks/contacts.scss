@@ -21,7 +21,7 @@
   @include media-desktop {
     grid-area: text;
     padding-left: 175px;
-    padding-right: 60px;
+    padding-right: 45px;
   }
 }
 
@@ -46,7 +46,7 @@
 
   @include media-desktop {
     position: relative;
-    margin-top: 79px;
+    margin-top: 71px;
     margin-bottom: 35px;
   }
 }
@@ -66,7 +66,8 @@
 
   @include media-desktop {
     flex-direction: column;
-    margin-bottom: 85px;
+    margin-bottom: 28px;
+    gap: 30px;
   }
 }
 
@@ -90,6 +91,10 @@
   @include media-tablet {
     margin-left: 21px;
   }
+
+  @include media-desktop {
+    margin-left: 19px;
+  }
 }
 
 .contacts__indent--email::after {
@@ -101,6 +106,10 @@
   left: 0;
   bottom: -1px;
   background-color: $color-line-link;
+
+  @include media-desktop {
+    bottom: -5px;
+  }
 }
 
 .contacts__indent--email:hover {
@@ -120,6 +129,8 @@
 
   @include media-desktop {
     grid-area: map;
+    margin-bottom: 107px;
+
   }
 }
 

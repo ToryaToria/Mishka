@@ -9,6 +9,8 @@
 
   @include media-desktop {
     padding-left: 175px;
+    padding-top: 69px;
+    padding-bottom: 85px;
   }
 }
 
@@ -17,5 +19,9 @@
 
   @include media-tablet {
     margin-bottom: 42px;
+  }
+
+  @include media-desktop {
+    margin-bottom: 39px;
   }
 }

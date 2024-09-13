@@ -24,7 +24,8 @@
 
   @include media-desktop {
     padding-left: 175px;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
+    padding-top: 77px;
   }
 }
 
@@ -43,6 +44,10 @@
   @include media-tablet {
     margin-bottom: 39px;
   }
+
+  @include media-desktop {
+    margin-bottom: 36px;
+  }
 }
 
 .reviews__btn-arrow-wrapp {
@@ -53,6 +58,10 @@
     position: absolute;
     bottom: 97px;
     right: -2px;
+  }
+
+  @include media-desktop {
+    bottom: 150px;
   }
 }
 
@@ -91,5 +100,9 @@
     padding: 14px 38px;
 
     width: fit-content;
+  }
+
+  @include media-desktop {
+    top: 78px;
   }
 }

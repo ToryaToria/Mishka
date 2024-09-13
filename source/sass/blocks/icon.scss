@@ -34,6 +34,10 @@
   // height: 38px;
   background-size: 33px 38px;
   background-image: url("../../img/stack.svg#icon-eco");
+
+  @include media-desktop {
+    margin-bottom: 18px;
+  }
 }
 
 .icon--n-2::before {
@@ -119,7 +123,7 @@
 
     margin-right: 0;
     margin-left: -175px;
-    margin-top: 150px;
+    margin-top: 72px;
 
 
     background-size: auto 23px;
@@ -223,6 +227,11 @@
   @include media-tablet {
     padding: 0 31px 0 31px;
   }
+
+  @include media-desktop {
+    padding-right: 36px;
+
+  }
 }
 
 .icon--flag::after {
@@ -235,8 +244,8 @@
 
   @include media-desktop {
     position: absolute;
-    top: 0;
-    left: -100px;
+    top: -10px;
+    left: -115px;
   }
 }
 
