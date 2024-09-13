@@ -8,38 +8,38 @@
   }
 
   @include media-desktop {
-  background-color: $color-bg-hero;
+    background-color: $color-bg-hero;
   }
 
-  &--index::after {
-    @include media-tablet {
+  @include media-desktop {
+    // bottom: -20px;
+    height: 34px;
+  }
+}
 
-      // outline:1px solid green;
+.main-header--wave::after {
+  @include media-tablet {
 
-      content: "";
-      display: block;
-      // width: 100%;
-      height: 24px;
+    // outline:1px solid green;
 
-      position: absolute;
-      left: 0;
-      bottom: -10px;
-      right: 0;
+    content: "";
+    display: block;
+    // width: 100%;
+    height: 24px;
 
-      z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    right: 0;
 
-      // background-image: url("../../img/stack.svg#zigzag-fill");
+    z-index: 10;
 
-      background-image: url("../../img/icons/zigzag-fill.svg");
-      background-size: contain;
-      background-position: bottom;
-      background-repeat: repeat no-repeat;
-    }
+    // background-image: url("../../img/stack.svg#zigzag-fill");
 
-    @include media-desktop {
-      // bottom: -20px;
-      height: 34px;
-    }
+    background-image: url("../../img/icons/zigzag-fill.svg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: repeat no-repeat;
   }
 }
 
@@ -89,10 +89,10 @@
   @include media-tablet {
     margin-left: -50px;
     margin-right: -50px;
-    margin-bottom: 54px;
+    // margin-bottom: 54px;
 
-    padding-top: 57px;
-    padding-bottom: 63px;
+    padding-top: 34px;
+    padding-bottom: 77px;
   }
 
   @include media-desktop {

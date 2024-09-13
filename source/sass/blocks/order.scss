@@ -15,6 +15,7 @@
 
   @include media-tablet {
     padding-bottom: 46px;
+    padding-top: 0;
   }
 
   @include media-desktop {
@@ -52,6 +53,7 @@
 
     @include media-tablet {
       margin-right: 33px;
+      // margin-bottom: 25px;
     }
 
     @include media-desktop {
@@ -88,11 +90,18 @@
 
   line-height: 24px;
 
+  @include media-tablet {
+    padding-left: 39px;
+    padding-right: 40px;
+    line-height: 28px;
+  }
+
   @include media-desktop {
     grid-area: text;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 51px;
+    // padding-bottom: 51px;
+    padding-bottom: 42px;
   }
 }
 
@@ -114,12 +123,16 @@
 }
 
 .order__video {
+  box-sizing: border-box;
   position: relative;
   margin-bottom: 30px;
 
 
   @include media-tablet {
     order: -1;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 40px;
   }
 
   @include media-desktop {

@@ -3,6 +3,7 @@
 
   @include media-tablet {
     padding-bottom: 64px;
+    padding-top: 46px;
   }
 
   @include media-desktop {
@@ -20,7 +21,8 @@
   margin-bottom: 30px;
 
   @include media-tablet {
-    margin-bottom: 53px;
+    margin-bottom: 51px;
+    gap: 52px;
   }
 
   @include media-desktop {

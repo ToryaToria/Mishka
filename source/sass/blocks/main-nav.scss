@@ -85,8 +85,6 @@
 
 .main-nav__list--nav {
   // background-color: greenyellow;
-  // margin-left: -50px;
-  // padding-left: 50px;
 
   @include media-tablet {
     min-width: 320px;
@@ -224,9 +222,8 @@
     min-width: 347px;
 
     align-self: center;
-    padding: 18px 0 23px;
+    padding: 19px 0 23px;
     text-align: right;
-
     padding-right: 50px;
     margin-right: -50px;
 
@@ -246,4 +243,8 @@
     // padding-top: 32px;
     // padding-bottom: 20px;
   }
+}
+
+.main-nav__list-second {
+  background-color: $color-bg-base;
 }

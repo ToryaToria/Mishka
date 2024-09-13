@@ -224,7 +224,7 @@
 
   background-color: rgba(0, 0, 0, 0.8);
 
-    @include media-tablet {
+  @include media-tablet {
     padding: 0 31px 0 31px;
   }
 
@@ -235,9 +235,11 @@
 
 .icon--basket--catalog::before {
   padding-right: 0;
+
+  @include media-tablet {
+    padding-left: 3px;
+  }
 }
-
-
 
 .icon--flag::after {
   @include media-tablet {

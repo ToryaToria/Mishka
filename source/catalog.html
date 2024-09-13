@@ -12,11 +12,17 @@
 </head>
 
 <body class="page__body text-base no-js">
-  <header class="main-header container">
+  <header class="main-header main-header--wave container">
     <nav class="main-header__nav main-nav">
       <div class="main-nav__wrapp">
+
         <a class="main-header__link" href="./index.html" aria-current="page">
-          <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
+
+          <picture>
+            <source media="(min-width:1150px)" srcset="./img/logo/mishka-logo-desktop.svg" width="149" height="72">
+            <source media="(min-width:768px)" srcset="./img/logo/mishka-logo-tablet.svg" width="113" height="46">
+            <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
+          </picture>
         </a>
 
         <button class="hamburger hamburger--open" type="button" aria-label="открыть меню">
@@ -25,40 +31,42 @@
       </div>
 
       <div class="main-nav__list-wrapp">
-        <ul class="main-nav__list main-nav__list--nav main-nav__list--nav-second">
+        <ul class="main-nav__list main-nav__list--nav main-nav__list-second">
           <li>
-            <a class="main-nav__link text-nav" href="./catalog.html">Каталог товаров</a>
+            <a class="main-nav__link  main-nav__link--noicons text-nav" href="./catalog.html">Каталог товаров</a>
           </li>
 
           <li>
-            <a class="main-nav__link text-nav" href="./form.html">Вязание на заказ</a>
+            <a class="main-nav__link text-nav  main-nav__link--noicons" href="./form.html">Вязание на заказ</a>
           </li>
         </ul>
       </div>
 
       <ul class="main-nav__list main-nav__list--user">
         <li class="main-nav__item">
-          <a class="main-nav__link text-nav icon icon--search" href="#">
+          <a class="main-nav__link main-nav__link--search text-nav icon icon--search" href="#">
             <span class="main-nav__not">Поиск по сайту</span>
           </a>
         </li>
 
         <li class="main-nav__item">
-          <a class="main-nav__link text-nav icon icon--basket" href="#">Корзина: пока пуста</a>
+          <a class=" main-nav__link main-nav__link--basket text-nav icon icon--basket" href="#">
+            <span>Корзина: пока пуста</span>
+          </a>
         </li>
       </ul>
 
       <ul class="main-nav__list main-nav__list--additional">
         <li>
-          <a class="main-nav__link text-nav" href="#">Новые поступления</a>
+          <a class="main-nav__link text-nav text-nav--additional" href="#">Новые поступления</a>
         </li>
 
         <li>
-          <a class="main-nav__link text-nav" href="#">Распродажа</a>
+          <a class="main-nav__link text-nav text-nav--additional" href="#">Распродажа</a>
         </li>
       </ul>
 
-      <p class="main-nav__delivery main-nav__delivery--second text-delivery">Бесплатная доставка по России</p>
+      <p class="main-nav__delivery text-delivery main-nav__list-second">Бесплатная доставка по России</p>
     </nav>
 
     <h1 class="main-header__title title">Каталог товаров</h1>
@@ -172,7 +180,7 @@
           </a>
 
           <div class="card__wrapp card__wrapp--crutch-1">
-            <h2 class="card__title card__title--crutch-1 catalog-title">Большая корзинка для игрушек</h2>
+            <h2 class="card__title card__title--crutch-1 catalog-title">Большая корзинка<br>для игрушек</h2>
             <p class="card__text catalog-text">Диаметр 30 см, высота 30 см</p>
 
             <p class="card__prise catalog-prise"> 1 500 руб
@@ -188,7 +196,10 @@
         <h2 class="order__title catalog-title">Процесс производства</h2>
 
         <div class="order__video ">
-          <video class="video" controls width="260" height="150" poster="./img/catalog/video-mobile.jpg">
+          <video class="video" poster="./img/catalog/video-mobile.jpg">
+
+            <!-- width="260" height="150" controls -->
+
             <source src="./video/rabbit320.webm" type="video/webm">
             <source src="./video/rabbit320.mp4" type="video/mp4">
             <source src="./video/rabbit320.ogv" type="video/ogg">
@@ -198,7 +209,6 @@
               и открыть его на своём устройстве.
             </p>
           </video>
-
 
           <!-- <div class="video__play-wrapp"> -->
           <!-- <button class="video__play" type="button">
