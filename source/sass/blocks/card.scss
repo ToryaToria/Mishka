@@ -1,11 +1,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  align-items: center;
-
   border: 1px solid $color-line;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -45,11 +42,10 @@
   }
 }
 
-
 .card__img {
   display: block;
   width: 260px;
-  height: 195px;
+  height: 194px;
 
   transition: scale 0.3s ease-in-out;
 
@@ -65,8 +61,14 @@
 }
 
 .card__wrapp {
-  padding-left: 28px;
-  padding-right: 28px;
+  box-sizing: border-box;
+  margin-left: 27px;
+  margin-right: 26px;
+  padding-top: 28px;
+
+  &--crutch-1 {
+    padding-top: 25px;
+  }
 
   @include media-tablet {
     flex-grow: 1;
@@ -85,6 +87,10 @@
 
 .card__title {
   margin-bottom: 6px;
+
+  &--crutch-1 {
+    margin-bottom: 9px;
+  }
 
   @include media-tablet {
     flex-grow: 1;
@@ -105,7 +111,7 @@
 }
 
 .card__prise {
-  padding-top: 23px;
+  padding-top: 21px;
 
   display: flex;
   align-items: start;
@@ -116,4 +122,5 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
 }

@@ -1,12 +1,14 @@
 .main-header {
-  padding-top: 22px;
   position: relative;
-  background-color: $color-bg-hero;
-
-  // background-color: bisque;
+  padding-top: 22px;
+  background-color: $color-white;
 
   @include media-tablet {
     padding-top: 0;
+  }
+
+  @include media-desktop {
+  background-color: $color-bg-hero;
   }
 
   &--index::after {
@@ -75,14 +77,14 @@
 }
 
 .main-header__title {
-  padding-top: 74px;
+  padding-top: 72px;
   padding-bottom: 74px;
 
   background-color: $color-bg-base;
 
   margin-left: -30px;
   margin-right: -30px;
-  margin-bottom: 17px;
+  // margin-bottom: 17px;
 
   @include media-tablet {
     margin-left: -50px;

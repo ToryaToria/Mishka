@@ -105,7 +105,7 @@
   height: 2px;
   right: 0;
   left: 0;
-  bottom: -1px;
+  bottom: 3px;
   background-color: $color-line-link;
 
   @include media-desktop {
@@ -122,7 +122,7 @@
 }
 
 .contacts__map {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 
   @include media-tablet {
     margin-bottom: 56px;
