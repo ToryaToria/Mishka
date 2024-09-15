@@ -85,6 +85,8 @@
 
   @include media-desktop {
     align-items: stretch;
+    padding-left: 28px;
+    padding-bottom: 24px;
   }
 }
 
@@ -93,6 +95,10 @@
 
   &--crutch-1 {
     margin-bottom: 9px;
+
+    @include media-desktop {
+      margin-bottom: 6px;
+    }
   }
 
   // @include media-tablet {
@@ -115,6 +121,7 @@
 
   @include media-desktop {
     flex-grow: 1;
+    padding-bottom: 12px;
   }
 }
 
