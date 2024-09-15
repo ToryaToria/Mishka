@@ -210,6 +210,10 @@
     padding-left: 50px;
 
     background-color: $color-bg-hero;
+
+    &--second {
+      background-color: $color-bg-base;
+    }
   }
 }
 
@@ -247,4 +251,8 @@
 
 .main-nav__list-second {
   background-color: $color-bg-base;
+
+  @include media-desktop {
+    background-color: $color-white;
+  }
 }

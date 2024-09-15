@@ -12,8 +12,9 @@
   }
 
   @include media-desktop {
-    // bottom: -20px;
-    // height: 34px;
+    &--second {
+      background-color: $color-bg-base;
+    }
   }
 }
 
@@ -40,6 +41,10 @@
     background-size: contain;
     background-position: bottom;
     background-repeat: repeat no-repeat;
+  }
+
+  @include media-desktop {
+    height: 29px;
   }
 }
 
@@ -96,8 +101,8 @@
   }
 
   @include media-desktop {
-    padding-top: 58px;
-    padding-bottom: 79px;
-    margin-bottom: 99px;
+    padding-top: 33px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
   }
 }
