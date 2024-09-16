@@ -12,11 +12,17 @@
 </head>
 
 <body class="page__body text-base no-js">
-  <header class="main-header container">
+  <header class="main-header main-header--second main-header--wave container">
     <nav class="main-header__nav main-nav">
       <div class="main-nav__wrapp">
+
         <a class="main-header__link" href="./index.html" aria-current="page">
-          <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
+
+          <picture>
+            <source media="(min-width:1150px)" srcset="./img/logo/mishka-logo-desktop.svg" width="149" height="72">
+            <source media="(min-width:768px)" srcset="./img/logo/mishka-logo-tablet.svg" width="113" height="46">
+            <img src="./img/logo/mishka-logo-mobile.svg" alt="логотип" width="86" height="35">
+          </picture>
         </a>
 
         <button class="hamburger hamburger--open" type="button" aria-label="открыть меню">
@@ -25,40 +31,42 @@
       </div>
 
       <div class="main-nav__list-wrapp">
-        <ul class="main-nav__list main-nav__list--nav main-nav__list--nav-second">
+        <ul class="main-nav__list main-nav__list--nav main-nav__list-second">
           <li>
-            <a class="main-nav__link text-nav" href="./catalog.html">Каталог товаров</a>
+            <a class="main-nav__link  main-nav__link--noicons text-nav" href="./catalog.html">Каталог товаров</a>
           </li>
 
           <li>
-            <a class="main-nav__link text-nav" href="./form.html">Вязание на заказ</a>
+            <a class="main-nav__link text-nav  main-nav__link--noicons" href="./form.html">Вязание на заказ</a>
           </li>
         </ul>
       </div>
 
       <ul class="main-nav__list main-nav__list--user">
         <li class="main-nav__item">
-          <a class="main-nav__link text-nav icon icon--search" href="#">
+          <a class="main-nav__link main-nav__link--search text-nav icon icon--search" href="#">
             <span class="main-nav__not">Поиск по сайту</span>
           </a>
         </li>
 
         <li class="main-nav__item">
-          <a class="main-nav__link text-nav icon icon--basket" href="#">Корзина: пока пуста</a>
+          <a class=" main-nav__link main-nav__link--basket text-nav icon icon--basket" href="#">
+            <span>Корзина: пока пуста</span>
+          </a>
         </li>
       </ul>
 
-      <ul class="main-nav__list main-nav__list--additional">
+      <ul class="main-nav__list main-nav__list--additional main-nav__list--additional-second">
         <li>
-          <a class="main-nav__link text-nav" href="#">Новые поступления</a>
+          <a class="main-nav__link text-nav text-nav--additional" href="#">Новые поступления</a>
         </li>
 
         <li>
-          <a class="main-nav__link text-nav" href="#">Распродажа</a>
+          <a class="main-nav__link text-nav text-nav--additional" href="#">Распродажа</a>
         </li>
       </ul>
 
-      <p class="main-nav__delivery main-nav__delivery--second text-delivery">Бесплатная доставка по России</p>
+      <p class="main-nav__delivery text-delivery main-nav__delivery--second">Бесплатная доставка по России</p>
     </nav>
 
     <h1 class="main-header__title title">Вязание на заказ</h1>
@@ -96,9 +104,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__bg-color">
-          <div class="form__wrapp-grid">
-            <p class="form__legend subtitle">Цвет</p>
+        <fieldset class="form__fieldset form__fieldset--color form__bg-color">
+          <div class="form__wrapp-grid form__wrapp-grid--color">
+            <p class="form__legend form__legend--color subtitle">Цвет</p>
 
             <ul class="form__list-color">
               <li>
@@ -153,14 +161,14 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--crutch-1">
-          <div class="form__wrapp-grid">
+          <div class="form__wrapp-grid form__wrapp-grid--color">
             <p class="form__legend subtitle">ФИО</p>
 
             <ul class="form__list-fio">
               <li class=" ">
                 <label class="form__wrapp-fio label-text" for="name">
                   <span>Имя:</span>
-                  <input class="form__field label-text label-text--input" placeholder="Введите ваше имя*" type="text"
+                  <input class="form__field form__field--fio label-text label-text--input" placeholder="Введите ваше имя*" type="text"
                     name="name" id="name" required>
                 </label>
               </li>
@@ -168,7 +176,7 @@
               <li class="">
                 <label class="form__wrapp-fio label-text" for="Surname">
                   <span> Фамилия:</span>
-                  <input class="form__field label-text label-text--input" placeholder="Укажите фамилию*" type="text"
+                  <input class="form__field form__field--fio label-text label-text--input" placeholder="Укажите фамилию*" type="text"
                     name="Surname" id="Surname" required>
                 </label>
               </li>
@@ -176,7 +184,7 @@
               <li class="">
                 <label class="form__wrapp-fio label-text" for="patronymic">
                   <span>Отчество:</span>
-                  <input class="form__field label-text label-text--input" placeholder="Отчество, если желаете"
+                  <input class="form__field form__field--fio label-text label-text--input" placeholder="Отчество, если желаете"
                     type="text" name="patronymic" id="patronymic">
                 </label>
               </li>
@@ -185,7 +193,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__bg-color form__bg-color--tel">
-          <div class="form__wrapp-grid">
+          <div class="form__wrapp-grid form__wrapp-grid--tel">
             <p class="form__legend form__legend--tel subtitle">Тел</p>
 
             <label class="form__icon icon icon--phone" for="phone">

@@ -189,16 +189,16 @@
 .label-text {
   @include font ($size: 17px, $line-height: 18px, $weight: 600);
 
-  &--input {
-    font-weight: 400;
-  }
-
-  &::placeholder {
+    &::placeholder {
     opacity: 0.3;
   }
 
   @include media-tablet {
     @include font ($size: 19px, $line-height: 18px, $weight: 600);
+  }
+
+  &--input {
+    font-weight: 400;
   }
 }
 
