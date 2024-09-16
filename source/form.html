@@ -102,7 +102,7 @@
 
             <ul class="form__list-color">
               <li>
-                <label class="control">
+                <label class="control control--color">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Белый" checked>
                   <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Белый</span>
@@ -110,7 +110,7 @@
               </li>
 
               <li>
-                <label class="control">
+                <label class="control control--color">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Серый" checked>
                   <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Серый</span>
@@ -118,7 +118,7 @@
               </li>
 
               <li>
-                <label class="control">
+                <label class="control control--color">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Тиффани">
                   <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Тиффани</span>
@@ -126,7 +126,7 @@
               </li>
 
               <li>
-                <label class="control">
+                <label class="control control--color">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Черный">
                   <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Черный</span>
@@ -134,7 +134,7 @@
               </li>
 
               <li>
-                <label class="control">
+                <label class="control control--color">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Розовый">
                   <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Розовый</span>
@@ -142,7 +142,7 @@
               </li>
 
               <li>
-                <label class="control">
+                <label class="control control--color">
                   <input class="control__input visually-hidden" type="checkbox" name="color" value="Оранжевый">
                   <span class="control__mark control__mark--check"></span>
                   <span class="control__label label-text">Оранжевый</span>
@@ -152,7 +152,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--crutch-1">
           <div class="form__wrapp-grid">
             <p class="form__legend subtitle">ФИО</p>
 
@@ -186,7 +186,7 @@
 
         <fieldset class="form__fieldset form__bg-color form__bg-color--tel">
           <div class="form__wrapp-grid">
-            <p class="form__legend form__legend--cont subtitle">Тел</p>
+            <p class="form__legend form__legend--tel subtitle">Тел</p>
 
             <label class="form__icon icon icon--phone" for="phone">
               <span class="visually-hidden">телефон</span>
@@ -198,7 +198,7 @@
 
         <fieldset class="form__fieldset form__bg-color form__bg-color--email">
           <div class="form__wrapp-grid">
-            <p class="form__legend form__legend--cont subtitle">E-mail</p>
+            <p class="form__legend form__legend--email subtitle"><span class="form__not-transfer">E-mail</span></p>
 
             <label class="form__icon icon icon--email" for="email">
               <span class="visually-hidden">E-mail</span>
@@ -215,7 +215,7 @@
             <label class="visually-hidden" for="wishes">Пожелания</label>
             <textarea class="form__textarea label-text label-text--input"
               placeholder="Опишите все ваши пожелания к заказу" name="wishes" id="wishes" cols="30"
-              rows="10"></textarea>
+              rows="6"></textarea>
           </div>
         </fieldset>
 
