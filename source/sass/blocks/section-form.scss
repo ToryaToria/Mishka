@@ -2,7 +2,7 @@
   margin-bottom: 55px;
 
   @include media-tablet {
-    margin-bottom: 52px;
+    margin-bottom: 49px;
   }
 }
 
@@ -16,6 +16,7 @@
   }
 
   @include media-desktop {
+    margin-top: 110px;
     padding-right: 173px;
     padding-left: 174px;
   }

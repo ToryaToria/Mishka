@@ -288,6 +288,11 @@
     top: 22px;
     right: 22px;
   }
+
+  @include media-desktop {
+    top: 21px;
+    right: 6px;
+  }
 }
 
 .icon--phone::after {
@@ -303,5 +308,9 @@
   @include media-tablet {
     top: 17px;
     right: 19px;
+  }
+
+  @include media-desktop {
+    right: 3px;
   }
 }

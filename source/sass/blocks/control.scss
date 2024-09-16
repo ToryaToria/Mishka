@@ -16,6 +16,14 @@
       gap: 30px;
     }
   }
+
+  @include media-desktop {
+    gap: 29px;
+
+    &--color {
+      gap: 28px;
+    }
+  }
 }
 
 .control__mark {
