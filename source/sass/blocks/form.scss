@@ -20,6 +20,10 @@
       padding-top: 57px;
       padding-bottom: 53px;
     }
+
+    &--dop {
+      margin-top: 49px;
+    }
   }
 
   @include media-desktop {
@@ -51,7 +55,9 @@
 
 .form__bg-color--email {
   @include media-tablet {
-    padding-top: 24px;
+    padding-top: 18px;
+    margin-bottom: 0;
+    padding-bottom: 51px;
   }
 }
 
@@ -87,6 +93,18 @@
     &--color {
       margin-top: 10px;
     }
+
+    &--tel {
+      margin-bottom: 16px;
+    }
+
+    &--email {
+      margin-top: 24px;
+    }
+
+    &--dop {
+      margin-top: 18px;
+    }
   }
 
   &::after {
@@ -94,23 +112,31 @@
     width: 100%;
     height: 1px;
     background-color: $color-line-link;
+
+    @include media-tablet {
+      width: 0;
+    }
   }
 }
 
 .form__not-transfer {
+  box-sizing: border-box;
   width: 89px;
+
+  @include media-tablet {
+    width: 167px;
+  }
 }
 
 .form__wrapp-grid {
   @include media-tablet {
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 167px 1fr;
     grid-template-areas: "label ul";
     grid-template-rows: max-content;
 
-    &--color,
-    &--tel {
-      grid-template-columns: 167px 1fr;
+    &--type {
+      grid-template-columns: 170px 1fr;
     }
   }
 
@@ -223,7 +249,7 @@
   @include media-tablet {
     background-color: transparent;
     padding-left: 17px;
-
+    padding-bottom: 13px;
   }
 }
 
@@ -281,8 +307,11 @@
 
   @include media-tablet {
     order: 1;
+    font-size: 17px;
+    margin-bottom: 0;
   }
 }
+
 
 .form__btn {
   width: 260px;

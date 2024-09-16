@@ -283,6 +283,11 @@
   position: absolute;
   top: 12px;
   right: 3px;
+
+  @include media-tablet {
+    top: 22px;
+    right: 22px;
+  }
 }
 
 .icon--phone::after {
@@ -294,4 +299,9 @@
   position: absolute;
   top: 11px;
   right: 1px;
+
+  @include media-tablet {
+    top: 17px;
+    right: 19px;
+  }
 }
