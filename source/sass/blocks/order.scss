@@ -54,6 +54,7 @@
     @include media-tablet {
       margin-right: 33px;
       // margin-bottom: 25px;
+      margin-top: -7px;
     }
 
     @include media-desktop {
@@ -64,7 +65,7 @@
   @include media-tablet {
     text-align: left;
 
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     padding-left: 42px;
 
     margin-left: 0;
@@ -95,7 +96,8 @@
   @include media-tablet {
     padding-left: 39px;
     padding-right: 40px;
-    line-height: 28px;
+    line-height: 30px;
+    padding-bottom: 40px;
   }
 
   @include media-desktop {
@@ -130,7 +132,7 @@
 .order__video {
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
 
   @include media-tablet {
