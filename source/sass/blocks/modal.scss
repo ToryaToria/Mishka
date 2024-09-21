@@ -8,6 +8,10 @@
   background-color: rgba(247, 244, 244, 0.8);
 }
 
+.modal--close {
+  display: none;
+}
+
 .modal__content {
   position: relative;
   margin: auto;
@@ -87,6 +91,7 @@
 }
 
 .modal__element {
+  display: block;
   margin-top: 0;
   margin-bottom: 0;
   font-family: $font-base;
@@ -101,5 +106,18 @@
 .modal__button {
   background-color: $color-bg-1;
   color: $color-white;
+  border-color: $color-bg-1;
+
+  &:hover {
+    background-color: $color-icon-second;
+    border-color: $color-icon-second;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.modal__item:has.modal__input[type="radio"]:checked {
   border-color: $color-bg-1;
 }

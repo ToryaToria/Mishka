@@ -101,6 +101,8 @@
 
 .btn-text {
   @include font ($size: 18px, $line-height: 20px, $color: $color-text-base, $weight: 600, $upper: uppercase);
+  text-decoration: none;
+  text-align: center;
 
   @include media-tablet {
     @include font ($size: 17px, $line-height: 20px, $color: $color-text-base, $weight: 600, $upper: uppercase);

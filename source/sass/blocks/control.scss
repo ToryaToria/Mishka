@@ -70,11 +70,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  // @include media-tablet {
-  //   width: 18px;
-  //   height: 18px;
-  // }
 }
 
 .control__input[type="checkbox"]:checked + .control__mark--check::before {
